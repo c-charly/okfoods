@@ -1,0 +1,23 @@
+{
+  "nom": "OK Foods Cameroun",
+  "slogan": "Slogan à renseigner",
+  "social": [],
+  "whatsappRecrutement": "",
+  "emailContact": "a-renseigner@example.com",
+  "legal": {
+    "mentions": {
+      "title": "Mentions légales",
+      "paragraphs": [
+        "Texte des mentions légales à renseigner : éditeur, directeur de la publication, hébergeur, contact."
+      ]
+    },
+    "confidentialite": {
+      "title": "Politique de confidentialité",
+      "paragraphs": [
+        "Texte à renseigner et à faire valider.",
+        "Le générateur de badge fonctionne sur votre appareil : aucune donnée n’est envoyée ni stockée. Le formulaire de contact transmet uniquement les informations que vous saisissez."
+      ]
+    }
+  },
+  "placeholder": true
+}

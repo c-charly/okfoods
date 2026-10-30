@@ -1,0 +1,75 @@
+{
+  "intro": "Introduction text to be provided.",
+  "steps": [
+    {
+      "n": 1,
+      "titre": "Ingredients",
+      "icone": "ingredients",
+      "texte": "Text to be provided: two to three sentences about this step.",
+      "chiffre": "Key figure to be provided",
+      "placeholder": true
+    },
+    {
+      "n": 2,
+      "titre": "Mix",
+      "icone": "bol",
+      "texte": "Text to be provided: two to three sentences about this step.",
+      "chiffre": "Key figure to be provided",
+      "placeholder": true
+    },
+    {
+      "n": 3,
+      "titre": "Bake",
+      "icone": "four",
+      "texte": "Text to be provided: two to three sentences about this step.",
+      "chiffre": "Key figure to be provided",
+      "placeholder": true
+    },
+    {
+      "n": 4,
+      "titre": "Pack",
+      "icone": "sachet",
+      "texte": "Text to be provided: two to three sentences about this step.",
+      "chiffre": "Key figure to be provided",
+      "placeholder": true
+    },
+    {
+      "n": 5,
+      "titre": "Deliver",
+      "icone": "tricycle",
+      "texte": "Text to be provided: two to three sentences about this step.",
+      "chiffre": "Key figure to be provided",
+      "placeholder": true
+    },
+    {
+      "n": 6,
+      "titre": "Serve",
+      "icone": "servir",
+      "texte": "Text to be provided: two to three sentences about this step.",
+      "chiffre": "Key figure to be provided",
+      "placeholder": true
+    }
+  ],
+  "reperes": [
+    {
+      "valeur": "XXXX",
+      "label": "Date or figure to be provided",
+      "placeholder": true
+    },
+    {
+      "valeur": "XX",
+      "label": "Date or figure to be provided",
+      "placeholder": true
+    },
+    {
+      "valeur": "XXX",
+      "label": "Date or figure to be provided",
+      "placeholder": true
+    },
+    {
+      "valeur": "XXXX",
+      "label": "Date or figure to be provided",
+      "placeholder": true
+    }
+  ]
+}

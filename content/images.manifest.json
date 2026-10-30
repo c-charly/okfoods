@@ -1,0 +1,319 @@
+{
+  "images": [
+    {
+      "id": "brand-logo",
+      "path": "/images/brand/logo.svg",
+      "ratio": "libre",
+      "minWidth": 0,
+      "minHeight": 0,
+      "description": "Logo OK Foods en couleur (fonds clairs)",
+      "required": true
+    },
+    {
+      "id": "brand-logo-white",
+      "path": "/images/brand/logo-blanc.svg",
+      "ratio": "libre",
+      "minWidth": 0,
+      "minHeight": 0,
+      "description": "Logo OK Foods blanc (fonds sombres)",
+      "required": true
+    },
+    {
+      "id": "produit-biscuit-croquant",
+      "path": "/images/produits/biscuit-croquant.png",
+      "ratio": "libre",
+      "minWidth": 1200,
+      "minHeight": 0,
+      "description": "Produit « Biscuit Croquant » sans fond (PNG transparent)",
+      "required": true
+    },
+    {
+      "id": "produit-lait-sucre",
+      "path": "/images/produits/lait-sucre.png",
+      "ratio": "libre",
+      "minWidth": 1200,
+      "minHeight": 0,
+      "description": "Produit « Lait Sucré » sans fond (PNG transparent)",
+      "required": true
+    },
+    {
+      "id": "produit-bonbon-fruite",
+      "path": "/images/produits/bonbon-fruite.png",
+      "ratio": "libre",
+      "minWidth": 1200,
+      "minHeight": 0,
+      "description": "Produit « Bonbon Fruité » sans fond (PNG transparent)",
+      "required": true
+    },
+    {
+      "id": "produit-biscuit-fondant",
+      "path": "/images/produits/biscuit-fondant.png",
+      "ratio": "libre",
+      "minWidth": 1200,
+      "minHeight": 0,
+      "description": "Produit « Biscuit Fondant » sans fond (PNG transparent)",
+      "required": true
+    },
+    {
+      "id": "produit-gaufrette",
+      "path": "/images/produits/gaufrette.png",
+      "ratio": "libre",
+      "minWidth": 1200,
+      "minHeight": 0,
+      "description": "Produit « Gaufrette » sans fond (PNG transparent)",
+      "required": true
+    },
+    {
+      "id": "produit-confiserie-acidulee",
+      "path": "/images/produits/confiserie-acidulee.png",
+      "ratio": "libre",
+      "minWidth": 1200,
+      "minHeight": 0,
+      "description": "Produit « Confiserie Acidulée » sans fond (PNG transparent)",
+      "required": true
+    },
+    {
+      "id": "bande-01",
+      "path": "/images/bande/bande-01.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "required": false
+    },
+    {
+      "id": "bande-02",
+      "path": "/images/bande/bande-02.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "required": false
+    },
+    {
+      "id": "bande-03",
+      "path": "/images/bande/bande-03.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "required": false
+    },
+    {
+      "id": "bande-04",
+      "path": "/images/bande/bande-04.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "required": false
+    },
+    {
+      "id": "bande-05",
+      "path": "/images/bande/bande-05.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "required": false
+    },
+    {
+      "id": "bande-06",
+      "path": "/images/bande/bande-06.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "required": false
+    },
+    {
+      "id": "bande-07",
+      "path": "/images/bande/bande-07.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "required": false
+    },
+    {
+      "id": "bande-08",
+      "path": "/images/bande/bande-08.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "required": false
+    },
+    {
+      "id": "usine-01",
+      "path": "/images/usine/usine-01.jpg",
+      "ratio": "3:2",
+      "minWidth": 1200,
+      "minHeight": 800,
+      "description": "Photo d’une étape de fabrication (page Recette)",
+      "required": false
+    },
+    {
+      "id": "usine-02",
+      "path": "/images/usine/usine-02.jpg",
+      "ratio": "3:2",
+      "minWidth": 1200,
+      "minHeight": 800,
+      "description": "Photo d’une étape de fabrication (page Recette)",
+      "required": false
+    },
+    {
+      "id": "usine-03",
+      "path": "/images/usine/usine-03.jpg",
+      "ratio": "3:2",
+      "minWidth": 1200,
+      "minHeight": 800,
+      "description": "Photo d’une étape de fabrication (page Recette)",
+      "required": false
+    },
+    {
+      "id": "usine-04",
+      "path": "/images/usine/usine-04.jpg",
+      "ratio": "3:2",
+      "minWidth": 1200,
+      "minHeight": 800,
+      "description": "Photo d’une étape de fabrication (page Recette)",
+      "required": false
+    },
+    {
+      "id": "usine-05",
+      "path": "/images/usine/usine-05.jpg",
+      "ratio": "3:2",
+      "minWidth": 1200,
+      "minHeight": 800,
+      "description": "Photo d’une étape de fabrication (page Recette)",
+      "required": false
+    },
+    {
+      "id": "lieu-01",
+      "path": "/images/lieu/lieu-01.jpg",
+      "ratio": "3:2",
+      "minWidth": 1200,
+      "minHeight": 800,
+      "description": "Photo du lieu à Bonabéri (page Nous trouver)",
+      "required": false
+    },
+    {
+      "id": "croqueur-01",
+      "path": "/images/croqueurs/croqueur-01.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "croqueur-02",
+      "path": "/images/croqueurs/croqueur-02.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "croqueur-03",
+      "path": "/images/croqueurs/croqueur-03.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "croqueur-04",
+      "path": "/images/croqueurs/croqueur-04.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "croqueur-05",
+      "path": "/images/croqueurs/croqueur-05.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "croqueur-06",
+      "path": "/images/croqueurs/croqueur-06.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "croqueur-07",
+      "path": "/images/croqueurs/croqueur-07.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "croqueur-08",
+      "path": "/images/croqueurs/croqueur-08.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "croqueur-09",
+      "path": "/images/croqueurs/croqueur-09.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "croqueur-10",
+      "path": "/images/croqueurs/croqueur-10.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "croqueur-11",
+      "path": "/images/croqueurs/croqueur-11.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "croqueur-12",
+      "path": "/images/croqueurs/croqueur-12.jpg",
+      "ratio": "4:5",
+      "minWidth": 800,
+      "minHeight": 1000,
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "required": false
+    },
+    {
+      "id": "og-image",
+      "path": "/og/og-image.png",
+      "ratio": "1200:630",
+      "minWidth": 1200,
+      "minHeight": 630,
+      "description": "Visuel de partage réseaux sociaux",
+      "required": false
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "nom": "Bonabéri site",
+  "nature": "Nature of the site to be confirmed (head office, factory, warehouse or public reception).",
+  "adresse": "Address to be provided, Bonabéri, Douala",
+  "telephone": "Phone to be provided",
+  "email": "a-renseigner@example.com",
+  "horaires": "Opening hours to be provided",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bonab%C3%A9ri%2C+Douala%2C+Cameroun",
+  "placeholder": true
+}

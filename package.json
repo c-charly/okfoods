@@ -1,0 +1,55 @@
+{
+  "name": "okfoods",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Site vitrine OK Foods Cameroun — « Le site qui se grignote »",
+  "packageManager": "pnpm@12.16.1",
+  "engines": {
+    "node": "^22.22.3 || ^24.15.0 || >=26.0.0"
+  },
+  "dependencies": {
+    "@nuxt/content": "^3.16.2",
+    "@nuxt/fonts": "^1.2.0",
+    "@nuxt/image": "^2.2.0",
+    "@nuxtjs/i18n": "^10.6.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "gsap": "^3.15.0",
+    "matter-js": "^0.20.0",
+    "nodemailer": "^10.2.1",
+    "nuxt": "^4.6.3",
+    "tailwindcss": "^4.3.3",
+    "vue": "^3.5.44",
+    "vue-router": "^5.4.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@nuxt/eslint": "^1.17.0",
+    "@playwright/test": "^1.64.1",
+    "@types/matter-js": "^0.20.2",
+    "@types/nodemailer": "^8.0.2",
+    "eslint": "^10.13.0",
+    "prettier": "^3.9.10",
+    "typescript": "~6.0.3",
+    "vitest": "^5.0.5",
+    "vue-tsc": "^3.3.13"
+  },
+  "scripts": {
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "preview": "nuxt preview",
+    "start": "node .output/server/index.mjs",
+    "prepare": "nuxt prepare",
+    "typecheck": "nuxt prepare && vue-tsc --noEmit -p .nuxt/tsconfig.app.json && vue-tsc --noEmit -p .nuxt/tsconfig.server.json",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write \"**/*.{ts,vue,mjs,json,css,yml,yaml}\" --log-level warn",
+    "format:check": "prettier --check \"**/*.{ts,vue,mjs,json,css,yml,yaml}\" --log-level warn",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "images:check": "node scripts/check-images.mjs",
+    "docker:dev": "docker compose -f docker-compose.dev.yml up --build",
+    "docker:up": "docker compose up --build -d",
+    "docker:down": "docker compose down"
+  }
+}

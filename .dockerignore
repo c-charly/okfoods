@@ -1,0 +1,16 @@
+node_modules
+.nuxt
+.output
+.data
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+coverage
+test-results
+playwright-report
+Dockerfile
+docker-compose*.yml
+*.md
+!README.md

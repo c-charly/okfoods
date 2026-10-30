@@ -1,0 +1,18 @@
+{
+  "slug": "gaufrette",
+  "name": "Gaufrette",
+  "range": "Biscuits",
+  "envies": ["croquant", "fondant"],
+  "color": "#B8121A",
+  "accentColor": "#F8EF22",
+  "crumbColor": "#E6B766",
+  "image": "/images/produits/gaufrette.png",
+  "kind": "biscuit",
+  "format": "Format à renseigner",
+  "flavors": ["Saveur 1", "Saveur 2"],
+  "description": "Description courte à renseigner.",
+  "tagline": "Croustillante dehors.",
+  "moments": ["midi", "matin"],
+  "order": 5,
+  "placeholder": true
+}

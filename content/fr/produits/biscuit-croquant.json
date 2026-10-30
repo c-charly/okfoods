@@ -1,0 +1,18 @@
+{
+  "slug": "biscuit-croquant",
+  "name": "Biscuit Croquant",
+  "range": "Biscuits",
+  "envies": ["croquant", "sucre"],
+  "color": "#2C3691",
+  "accentColor": "#F8EF22",
+  "crumbColor": "#C98A3B",
+  "image": "/images/produits/biscuit-croquant.png",
+  "kind": "biscuit",
+  "format": "Format à renseigner",
+  "flavors": ["Saveur 1", "Saveur 2"],
+  "description": "Description courte à renseigner.",
+  "tagline": "Le croquant du goûter.",
+  "moments": ["gouter", "matin"],
+  "order": 1,
+  "placeholder": true
+}

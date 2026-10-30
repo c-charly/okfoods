@@ -1,0 +1,18 @@
+{
+  "slug": "biscuit-fondant",
+  "name": "Biscuit Fondant",
+  "range": "Biscuits",
+  "envies": ["fondant"],
+  "color": "#1B2266",
+  "accentColor": "#D3181F",
+  "crumbColor": "#8A5A2B",
+  "image": "/images/produits/biscuit-fondant.png",
+  "kind": "biscuit",
+  "format": "Format to be provided",
+  "flavors": ["Flavour 1", "Flavour 2"],
+  "description": "Short description to be provided.",
+  "tagline": "It melts, you smile.",
+  "moments": ["soir", "gouter"],
+  "order": 4,
+  "placeholder": true
+}

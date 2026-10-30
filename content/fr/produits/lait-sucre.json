@@ -1,0 +1,18 @@
+{
+  "slug": "lait-sucre",
+  "name": "Lait Sucré",
+  "range": "Lait sucré",
+  "envies": ["fondant", "sucre"],
+  "color": "#D3181F",
+  "accentColor": "#F8EF22",
+  "crumbColor": "#FFF8E6",
+  "image": "/images/produits/lait-sucre.png",
+  "kind": "sachet",
+  "format": "Format à renseigner",
+  "flavors": ["Saveur 1", "Saveur 2"],
+  "description": "Description courte à renseigner.",
+  "tagline": "Tout en douceur.",
+  "moments": ["matin", "soir"],
+  "order": 2,
+  "placeholder": true
+}

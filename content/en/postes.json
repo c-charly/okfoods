@@ -1,0 +1,29 @@
+[
+  {
+    "id": "poste-01",
+    "ville": "Douala",
+    "dateLimite": "2027-06-30",
+    "actif": true,
+    "placeholder": true,
+    "intitule": "Job title to be provided (example 1)",
+    "profil": "Required profile to be provided"
+  },
+  {
+    "id": "poste-02",
+    "ville": "Douala",
+    "dateLimite": "2026-01-31",
+    "actif": true,
+    "placeholder": true,
+    "intitule": "Job title to be provided (example 2)",
+    "profil": "Required profile to be provided"
+  },
+  {
+    "id": "poste-03",
+    "ville": "Bonabéri",
+    "dateLimite": "2027-03-31",
+    "actif": true,
+    "placeholder": true,
+    "intitule": "Job title to be provided (example 3)",
+    "profil": "Required profile to be provided"
+  }
+]

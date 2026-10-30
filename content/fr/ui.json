@@ -1,0 +1,298 @@
+{
+  "a11y": {
+    "skip": "Aller au contenu principal",
+    "home": "OK Foods, retour à l’accueil",
+    "mainNav": "Navigation principale",
+    "mobileNav": "Navigation mobile",
+    "closeMenu": "Fermer le menu",
+    "openMenu": "Plus de pages",
+    "pause": "Mettre en pause",
+    "play": "Reprendre",
+    "prev": "Précédent",
+    "next": "Suivant",
+    "close": "Fermer",
+    "product": "Produit",
+    "decorative": "Illustration décorative"
+  },
+  "nav": {
+    "home": "Accueil",
+    "products": "Produits",
+    "recipe": "Recette",
+    "find": "Nous trouver",
+    "more": "Plus",
+    "team": "Team bleue",
+    "words": "Ils en parlent",
+    "contact": "Contact",
+    "partner": "Devenir partenaire",
+    "moreTitle": "Plus de pages",
+    "findShort": "Trouver"
+  },
+  "cta": {
+    "distributor": "Devenir distributeur / partenaire"
+  },
+  "motion": {
+    "reduce": "Réduire les animations",
+    "restore": "Réactiver les animations"
+  },
+  "lang": {
+    "label": "Langue",
+    "fr": "Français",
+    "en": "English"
+  },
+  "placeholder": {
+    "badge": "Contenu d’exemple",
+    "file": "Fichier attendu"
+  },
+  "footer": {
+    "title": "Il ne reste que des miettes",
+    "hint": "Disperse-les du doigt ou de la souris.",
+    "coords": "Coordonnées",
+    "links": "Liens utiles",
+    "legal": "Mentions légales",
+    "privacy": "Confidentialité",
+    "rights": "Tous droits réservés."
+  },
+  "seo": {
+    "home": {
+      "title": "Le site qui se grignote",
+      "description": "OK Foods Cameroun : biscuits, lait sucré et confiseries. Un site qui se croque."
+    },
+    "products": {
+      "title": "Le défilé des produits",
+      "description": "Tous les produits OK Foods, un par écran. Choisis ton envie et croque."
+    },
+    "recipe": {
+      "title": "Notre histoire en recette",
+      "description": "Des ingrédients à ta main : comment un produit OK Foods est fabriqué et livré."
+    },
+    "find": {
+      "title": "Nous trouver : Douala – Bonabéri",
+      "description": "Où trouver OK Foods à Douala et Bonabéri : adresse, horaires et itinéraire."
+    },
+    "team": {
+      "title": "Team bleue : recrutement",
+      "description": "Postes ouverts chez OK Foods, badge candidat et candidature par WhatsApp."
+    },
+    "words": {
+      "title": "Ils en parlent",
+      "description": "Ils mangent OK Foods : leurs phrases, leurs bouchées, leurs portraits."
+    },
+    "contact": {
+      "title": "Contact et partenaires",
+      "description": "Distributeurs, partenaires, presse : écrivez à OK Foods Cameroun."
+    },
+    "notFound": {
+      "title": "Page introuvable",
+      "description": "Cette page a été croquée."
+    },
+    "legal": {
+      "title": "Mentions légales",
+      "description": "Mentions légales du site OK Foods Cameroun."
+    },
+    "privacy": {
+      "title": "Confidentialité",
+      "description": "Politique de confidentialité du site OK Foods Cameroun."
+    }
+  },
+  "envies": {
+    "croquant": "Croquant",
+    "fondant": "Fondant",
+    "sucre": "Sucré",
+    "fruite": "Fruité"
+  },
+  "moments": {
+    "matin": "Matin",
+    "midi": "Midi",
+    "gouter": "Goûter",
+    "soir": "Soir"
+  },
+  "home": {
+    "open": {
+      "kicker": "OK Foods Cameroun",
+      "title": "OK Foods",
+      "line": "Ça croque, ça fond, ça se partage.",
+      "tear": "Déchirer le sachet",
+      "skip": "Passer l’ouverture",
+      "scroll": "Fais défiler"
+    },
+    "envie": {
+      "title": "T’as envie de quoi ?",
+      "hint": "Touche une bulle, on te montre ce qui va avec.",
+      "pick": "Pour ton envie de {envie}",
+      "none": "Choisis une envie pour voir les produits qui vont avec.",
+      "see": "Voir tout le défilé",
+      "reset": "Choisir autre chose"
+    },
+    "moment": {
+      "title": "L’heure de la pause",
+      "hint": "C’est quand, ta pause ?",
+      "phrases": {
+        "matin": "Le jour se lève, la pause aussi.",
+        "midi": "Midi pile : on se pose cinq minutes.",
+        "gouter": "L’heure du goûter, c’est sacré.",
+        "soir": "Le calme du soir, un petit croc."
+      },
+      "suggest": "On te suggère",
+      "discover": "Découvrir"
+    },
+    "marquee": ["CROQUE", "FONDS", "PARTAGE", "GRIGNOTE", "SAVOURE"],
+    "recipe": {
+      "title": "Ça vient de quelque part",
+      "intro": "De la cuisine à ta main : la recette en trois temps.",
+      "more": "Toute la recette"
+    },
+    "team": {
+      "words": ["TEAM BLEUE", "REJOINS-NOUS", "TEAM BLEUE"],
+      "line": "La team bleue recrute dans la rue, à pied, à tricycle.",
+      "more": "Voir les postes"
+    }
+  },
+  "produits": {
+    "kicker": "Le défilé",
+    "title": "Les produits",
+    "intro": "Un produit par écran. Choisis ton envie, puis croque.",
+    "filter": "Ton envie du moment",
+    "all": "Tout",
+    "bite": "Croque-moi",
+    "again": "Remanger",
+    "range": "Gamme",
+    "format": "Format",
+    "flavors": "Saveurs",
+    "jump": "Aller au produit",
+    "level": "Bouchée {n} sur 3",
+    "first": "Pour toi d’abord",
+    "end": "Tu veux le distribuer ?"
+  },
+  "recette": {
+    "kicker": "La recette",
+    "title": "Notre histoire en recette",
+    "intro": "Comment un produit arrive dans ta main, étape par étape.",
+    "step": "Étape",
+    "key": "À retenir",
+    "reperes": "Repères"
+  },
+  "trouver": {
+    "kicker": "La tournée",
+    "title": "De Douala à Bonabéri",
+    "intro": "Suis le tricycle : il traverse le pont du Wouri.",
+    "info": "Infos pratiques",
+    "address": "Adresse",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "hours": "Horaires",
+    "route": "Itinéraire",
+    "map": "Voir sur la carte",
+    "mapHide": "Masquer la carte",
+    "from": "Douala",
+    "to": "Bonabéri",
+    "bridge": "Pont du Wouri",
+    "river": "Le Wouri"
+  },
+  "team": {
+    "kicker": "Recrutement",
+    "title": "TEAM BLEUE",
+    "hook": "Rejoins la team qui fait vivre OK Foods dans la rue.",
+    "jobs": "Postes ouverts",
+    "city": "Ville",
+    "profile": "Profil",
+    "deadline": "Date limite",
+    "status": "État",
+    "open": "Ouvert",
+    "closed": "Fermé",
+    "noJobs": "Aucun poste ouvert pour le moment.",
+    "applyTitle": "Comment postuler",
+    "apply": [
+      {
+        "title": "Choisis un poste",
+        "text": "Repère le poste qui te correspond dans la liste ci-dessus."
+      },
+      {
+        "title": "Crée ton badge",
+        "text": "Remplis le formulaire : ton badge candidat se construit en direct."
+      },
+      {
+        "title": "Envoie sur WhatsApp",
+        "text": "Un message est prêt. Ajoute ton CV et envoie."
+      }
+    ],
+    "badge": {
+      "title": "Ton badge candidat",
+      "firstName": "Prénom",
+      "city": "Ville",
+      "district": "Quartier",
+      "job": "Poste",
+      "pickJob": "Choisis un poste",
+      "download": "Télécharger l’image",
+      "whatsapp": "Postuler sur WhatsApp",
+      "candidate": "CANDIDAT",
+      "note": "Ton badge est créé sur ton téléphone. Rien n’est envoyé, rien n’est stocké.",
+      "missingNumber": "Numéro WhatsApp à renseigner : le message s’ouvre sans destinataire.",
+      "message": "Bonjour, je suis {prenom}, je candidate au poste de {poste} à {ville}, quartier {quartier}. Voici mon CV.",
+      "error": "L’aperçu du badge n’est pas disponible, mais tu peux quand même postuler.",
+      "preview": "Aperçu du badge",
+      "fillIn": "Remplis le formulaire pour voir ton badge."
+    },
+    "scam": "Ne donnez jamais d’argent pour obtenir un emploi chez OK Foods."
+  },
+  "parole": {
+    "kicker": "Ils en parlent",
+    "title": "Ils en parlent",
+    "a": {
+      "lead": "Je mange OK Foods quand…",
+      "all": "Voir toutes les réponses",
+      "hide": "Masquer les réponses",
+      "by": "par",
+      "list": "Toutes les réponses"
+    },
+    "b": {
+      "title": "Les croqueurs",
+      "intro": "De vraies personnes, de vraies bouchées.",
+      "open": "Voir la photo de {name}",
+      "viewer": "Visionneuse photo",
+      "of": "{n} sur {total}"
+    },
+    "c": {
+      "title": "Face à face",
+      "says": "dit"
+    }
+  },
+  "contact": {
+    "kicker": "Parlons-nous",
+    "title": "On discute ?",
+    "intro": "Distributeur, partenaire, presse ou simple curiosité : choisis ton profil.",
+    "noOrder": "Il n’y a pas de commande en ligne : ici, on parle partenariat.",
+    "chat": {
+      "you": "Toi",
+      "bot": "OK Foods",
+      "restart": "Recommencer",
+      "recap": "Récapitulatif",
+      "mailto": "Envoyer par e-mail",
+      "useForm": "Envoyer via le formulaire",
+      "candidate": "Pour postuler, direction la page Team bleue.",
+      "goTeam": "Aller à la Team bleue",
+      "placeholder": "Écris ici…",
+      "send": "Envoyer",
+      "who": "Tu es plutôt…"
+    },
+    "form": {
+      "prefer": "Préférer un formulaire",
+      "title": "Formulaire classique",
+      "name": "Nom",
+      "email": "E-mail",
+      "phone": "Téléphone",
+      "message": "Message",
+      "send": "Envoyer",
+      "sending": "Envoi…",
+      "success": "Merci ! Ton message est bien parti.",
+      "demo": "Mode démonstration : message enregistré dans les journaux, aucun e-mail envoyé.",
+      "error": "L’envoi a échoué. Réessaie ou écris-nous par e-mail.",
+      "required": "Champ requis",
+      "rate": "Trop de messages envoyés. Réessaie un peu plus tard."
+    }
+  },
+  "notFound": {
+    "title": "Il n’en reste que des miettes",
+    "text": "Cette page a été croquée. Retourne à l’accueil.",
+    "home": "Retour à l’accueil"
+  }
+}

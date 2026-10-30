@@ -1,0 +1,21 @@
+{
+  "nom": "OK Foods Cameroun",
+  "slogan": "Tagline to be provided",
+  "social": [],
+  "whatsappRecrutement": "",
+  "emailContact": "a-renseigner@example.com",
+  "legal": {
+    "mentions": {
+      "title": "Legal notice",
+      "paragraphs": ["Legal notice text to be provided: publisher, publication director, host, contact."]
+    },
+    "confidentialite": {
+      "title": "Privacy policy",
+      "paragraphs": [
+        "Text to be provided and validated.",
+        "The badge generator runs on your device: no data is sent or stored. The contact form only transmits what you type."
+      ]
+    }
+  },
+  "placeholder": true
+}

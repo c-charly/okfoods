@@ -1,0 +1,50 @@
+[
+  {
+    "completion": "I need a little crunch",
+    "prenom": "Name A",
+    "ville": "Douala",
+    "placeholder": true
+  },
+  {
+    "completion": "break time is here",
+    "prenom": "Name B",
+    "ville": "Bonabéri",
+    "placeholder": true
+  },
+  {
+    "completion": "we share with friends",
+    "prenom": "Name C",
+    "ville": "Douala",
+    "placeholder": true
+  },
+  {
+    "completion": "evening falls",
+    "prenom": "Name D",
+    "ville": "Douala",
+    "placeholder": true
+  },
+  {
+    "completion": "it's hot outside",
+    "prenom": "Name E",
+    "ville": "Bonabéri",
+    "placeholder": true
+  },
+  {
+    "completion": "I want to treat myself",
+    "prenom": "Name F",
+    "ville": "Douala",
+    "placeholder": true
+  },
+  {
+    "completion": "I'm back from the market",
+    "prenom": "Name G",
+    "ville": "Bonabéri",
+    "placeholder": true
+  },
+  {
+    "completion": "the day has been long",
+    "prenom": "Name H",
+    "ville": "Douala",
+    "placeholder": true
+  }
+]

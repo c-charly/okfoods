@@ -1,0 +1,71 @@
+{
+  "intro": "Salut ! Dis-nous qui tu es, on s’occupe du reste.",
+  "outro": "Merci ! Voici le récapitulatif de ta demande.",
+  "profils": [
+    {
+      "id": "particulier",
+      "label": "Particulier",
+      "subject": "Message d’un particulier",
+      "steps": [
+        {
+          "id": "sujet",
+          "question": "Tu veux nous parler de quoi ?",
+          "type": "choice",
+          "options": ["Un produit", "Une suggestion", "Autre chose"]
+        },
+        {
+          "id": "message",
+          "question": "Dis-nous tout, on lit tout.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "distributeur",
+      "label": "Distributeur / grossiste",
+      "subject": "Demande de partenariat distribution",
+      "steps": [
+        {
+          "id": "ville",
+          "question": "Dans quelle ville travailles-tu ?",
+          "type": "text"
+        },
+        {
+          "id": "activite",
+          "question": "Tu fais quoi aujourd’hui ?",
+          "type": "choice",
+          "options": ["Grossiste", "Détaillant", "Je démarre", "Autre"]
+        },
+        {
+          "id": "message",
+          "question": "Parle-nous de ton projet.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "presse",
+      "label": "Presse",
+      "subject": "Demande presse",
+      "steps": [
+        {
+          "id": "media",
+          "question": "Quel média représentes-tu ?",
+          "type": "text"
+        },
+        {
+          "id": "message",
+          "question": "Quelle est ta demande ?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "candidat",
+      "label": "Candidat",
+      "subject": "Candidature",
+      "redirect": "/team-bleue",
+      "steps": []
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "poste-01",
+    "ville": "Douala",
+    "dateLimite": "2027-06-30",
+    "actif": true,
+    "placeholder": true,
+    "intitule": "Poste à renseigner (exemple 1)",
+    "profil": "Profil recherché à renseigner"
+  },
+  {
+    "id": "poste-02",
+    "ville": "Douala",
+    "dateLimite": "2026-01-31",
+    "actif": true,
+    "placeholder": true,
+    "intitule": "Poste à renseigner (exemple 2)",
+    "profil": "Profil recherché à renseigner"
+  },
+  {
+    "id": "poste-03",
+    "ville": "Bonabéri",
+    "dateLimite": "2027-03-31",
+    "actif": true,
+    "placeholder": true,
+    "intitule": "Poste à renseigner (exemple 3)",
+    "profil": "Profil recherché à renseigner"
+  }
+]

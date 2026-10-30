@@ -1,0 +1,71 @@
+{
+  "intro": "Hi! Tell us who you are, we’ll take it from there.",
+  "outro": "Thanks! Here is a summary of your request.",
+  "profils": [
+    {
+      "id": "particulier",
+      "label": "Individual",
+      "subject": "Message from an individual",
+      "steps": [
+        {
+          "id": "sujet",
+          "question": "What would you like to talk about?",
+          "type": "choice",
+          "options": ["A product", "A suggestion", "Something else"]
+        },
+        {
+          "id": "message",
+          "question": "Tell us everything, we read it all.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "distributeur",
+      "label": "Distributor / wholesaler",
+      "subject": "Distribution partnership request",
+      "steps": [
+        {
+          "id": "ville",
+          "question": "Which city do you work in?",
+          "type": "text"
+        },
+        {
+          "id": "activite",
+          "question": "What do you do today?",
+          "type": "choice",
+          "options": ["Wholesaler", "Retailer", "Just starting", "Other"]
+        },
+        {
+          "id": "message",
+          "question": "Tell us about your project.",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "presse",
+      "label": "Press",
+      "subject": "Press request",
+      "steps": [
+        {
+          "id": "media",
+          "question": "Which media do you represent?",
+          "type": "text"
+        },
+        {
+          "id": "message",
+          "question": "What is your request?",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "id": "candidat",
+      "label": "Applicant",
+      "subject": "Application",
+      "redirect": "/team-bleue",
+      "steps": []
+    }
+  ]
+}

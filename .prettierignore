@@ -1,0 +1,8 @@
+node_modules
+.nuxt
+.output
+.data
+public/fonts
+pnpm-lock.yaml
+coverage
+test-results

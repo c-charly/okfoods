@@ -1,0 +1,298 @@
+{
+  "a11y": {
+    "skip": "Skip to main content",
+    "home": "OK Foods, back to home",
+    "mainNav": "Main navigation",
+    "mobileNav": "Mobile navigation",
+    "closeMenu": "Close menu",
+    "openMenu": "More pages",
+    "pause": "Pause",
+    "play": "Resume",
+    "prev": "Previous",
+    "next": "Next",
+    "close": "Close",
+    "product": "Product",
+    "decorative": "Decorative illustration"
+  },
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "recipe": "Recipe",
+    "find": "Find us",
+    "more": "More",
+    "team": "Blue team",
+    "words": "What they say",
+    "contact": "Contact",
+    "partner": "Become a partner",
+    "moreTitle": "More pages",
+    "findShort": "Find us"
+  },
+  "cta": {
+    "distributor": "Become a distributor / partner"
+  },
+  "motion": {
+    "reduce": "Reduce animations",
+    "restore": "Restore animations"
+  },
+  "lang": {
+    "label": "Language",
+    "fr": "Français",
+    "en": "English"
+  },
+  "placeholder": {
+    "badge": "Sample content",
+    "file": "Expected file"
+  },
+  "footer": {
+    "title": "Only crumbs are left",
+    "hint": "Scatter them with your finger or mouse.",
+    "coords": "Contact details",
+    "links": "Useful links",
+    "legal": "Legal notice",
+    "privacy": "Privacy",
+    "rights": "All rights reserved."
+  },
+  "seo": {
+    "home": {
+      "title": "The site you can nibble",
+      "description": "OK Foods Cameroon: biscuits, sweetened milk and confectionery. A site you can bite into."
+    },
+    "products": {
+      "title": "The product parade",
+      "description": "Every OK Foods product, one per screen. Pick your craving and bite."
+    },
+    "recipe": {
+      "title": "Our story as a recipe",
+      "description": "From ingredients to your hand: how an OK Foods product is made and delivered."
+    },
+    "find": {
+      "title": "Find us: Douala – Bonabéri",
+      "description": "Where to find OK Foods in Douala and Bonabéri: address, hours and directions."
+    },
+    "team": {
+      "title": "Blue team: recruitment",
+      "description": "Open positions at OK Foods, applicant badge and WhatsApp application."
+    },
+    "words": {
+      "title": "What they say",
+      "description": "They eat OK Foods: their sentences, their bites, their portraits."
+    },
+    "contact": {
+      "title": "Contact and partners",
+      "description": "Distributors, partners, press: write to OK Foods Cameroon."
+    },
+    "notFound": {
+      "title": "Page not found",
+      "description": "This page has been nibbled away."
+    },
+    "legal": {
+      "title": "Legal notice",
+      "description": "Legal notice of the OK Foods Cameroon website."
+    },
+    "privacy": {
+      "title": "Privacy",
+      "description": "Privacy policy of the OK Foods Cameroon website."
+    }
+  },
+  "envies": {
+    "croquant": "Crunchy",
+    "fondant": "Melting",
+    "sucre": "Sweet",
+    "fruite": "Fruity"
+  },
+  "moments": {
+    "matin": "Morning",
+    "midi": "Noon",
+    "gouter": "Snack time",
+    "soir": "Evening"
+  },
+  "home": {
+    "open": {
+      "kicker": "OK Foods Cameroon",
+      "title": "OK Foods",
+      "line": "It crunches, it melts, it’s made to share.",
+      "tear": "Tear the bag open",
+      "skip": "Skip the intro",
+      "scroll": "Scroll down"
+    },
+    "envie": {
+      "title": "What are you craving?",
+      "hint": "Tap a bubble and we’ll show what goes with it.",
+      "pick": "For your {envie} craving",
+      "none": "Pick a craving to see matching products.",
+      "see": "See the whole parade",
+      "reset": "Pick something else"
+    },
+    "moment": {
+      "title": "Break time",
+      "hint": "When is your break?",
+      "phrases": {
+        "matin": "The day is rising, and so is your break.",
+        "midi": "High noon: take five.",
+        "gouter": "Snack time is sacred.",
+        "soir": "Quiet evening, a little crunch."
+      },
+      "suggest": "We suggest",
+      "discover": "Discover"
+    },
+    "marquee": ["BITE", "MELT", "SHARE", "NIBBLE", "ENJOY"],
+    "recipe": {
+      "title": "It comes from somewhere",
+      "intro": "From the kitchen to your hand: the recipe in three steps.",
+      "more": "The full recipe"
+    },
+    "team": {
+      "words": ["BLUE TEAM", "JOIN US", "BLUE TEAM"],
+      "line": "The blue team recruits on the street, on foot, by tricycle.",
+      "more": "See open positions"
+    }
+  },
+  "produits": {
+    "kicker": "The parade",
+    "title": "Products",
+    "intro": "One product per screen. Pick your craving, then bite.",
+    "filter": "Your craving right now",
+    "all": "All",
+    "bite": "Bite me",
+    "again": "Eat again",
+    "range": "Range",
+    "format": "Size",
+    "flavors": "Flavours",
+    "jump": "Jump to product",
+    "level": "Bite {n} of 3",
+    "first": "For you first",
+    "end": "Want to distribute it?"
+  },
+  "recette": {
+    "kicker": "The recipe",
+    "title": "Our story as a recipe",
+    "intro": "How a product ends up in your hand, step by step.",
+    "step": "Step",
+    "key": "Key fact",
+    "reperes": "Milestones"
+  },
+  "trouver": {
+    "kicker": "The tour",
+    "title": "From Douala to Bonabéri",
+    "intro": "Follow the tricycle: it crosses the Wouri bridge.",
+    "info": "Practical information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Opening hours",
+    "route": "Directions",
+    "map": "View on the map",
+    "mapHide": "Hide the map",
+    "from": "Douala",
+    "to": "Bonabéri",
+    "bridge": "Wouri bridge",
+    "river": "The Wouri"
+  },
+  "team": {
+    "kicker": "Recruitment",
+    "title": "BLUE TEAM",
+    "hook": "Join the team that makes OK Foods happen on the street.",
+    "jobs": "Open positions",
+    "city": "City",
+    "profile": "Profile",
+    "deadline": "Deadline",
+    "status": "Status",
+    "open": "Open",
+    "closed": "Closed",
+    "noJobs": "No open positions right now.",
+    "applyTitle": "How to apply",
+    "apply": [
+      {
+        "title": "Pick a position",
+        "text": "Find the position that suits you in the list above."
+      },
+      {
+        "title": "Create your badge",
+        "text": "Fill in the form: your applicant badge builds live."
+      },
+      {
+        "title": "Send on WhatsApp",
+        "text": "A message is ready. Add your CV and send."
+      }
+    ],
+    "badge": {
+      "title": "Your applicant badge",
+      "firstName": "First name",
+      "city": "City",
+      "district": "District",
+      "job": "Position",
+      "pickJob": "Pick a position",
+      "download": "Download the image",
+      "whatsapp": "Apply on WhatsApp",
+      "candidate": "APPLICANT",
+      "note": "Your badge is created on your phone. Nothing is sent, nothing is stored.",
+      "missingNumber": "WhatsApp number to be provided: the message opens without a recipient.",
+      "message": "Hello, I am {prenom}, I am applying for the {poste} position in {ville}, {quartier} district. Here is my CV.",
+      "error": "The badge preview is unavailable, but you can still apply.",
+      "preview": "Badge preview",
+      "fillIn": "Fill in the form to see your badge."
+    },
+    "scam": "Never give money to get a job at OK Foods."
+  },
+  "parole": {
+    "kicker": "What they say",
+    "title": "What they say",
+    "a": {
+      "lead": "I eat OK Foods when…",
+      "all": "See all answers",
+      "hide": "Hide answers",
+      "by": "by",
+      "list": "All answers"
+    },
+    "b": {
+      "title": "The biters",
+      "intro": "Real people, real bites.",
+      "open": "View {name}’s photo",
+      "viewer": "Photo viewer",
+      "of": "{n} of {total}"
+    },
+    "c": {
+      "title": "Face to face",
+      "says": "says"
+    }
+  },
+  "contact": {
+    "kicker": "Let’s talk",
+    "title": "Shall we chat?",
+    "intro": "Distributor, partner, press or just curious: pick your profile.",
+    "noOrder": "There is no online ordering: here, we talk partnerships.",
+    "chat": {
+      "you": "You",
+      "bot": "OK Foods",
+      "restart": "Start over",
+      "recap": "Summary",
+      "mailto": "Send by email",
+      "useForm": "Send via the form",
+      "candidate": "To apply, head to the Blue team page.",
+      "goTeam": "Go to the Blue team",
+      "placeholder": "Type here…",
+      "send": "Send",
+      "who": "You are more of a…"
+    },
+    "form": {
+      "prefer": "I’d rather use a form",
+      "title": "Classic form",
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "message": "Message",
+      "send": "Send",
+      "sending": "Sending…",
+      "success": "Thanks! Your message is on its way.",
+      "demo": "Demo mode: message saved in the logs, no email sent.",
+      "error": "Sending failed. Try again or email us.",
+      "required": "Required field",
+      "rate": "Too many messages sent. Please try again later."
+    }
+  },
+  "notFound": {
+    "title": "Only crumbs are left",
+    "text": "This page has been nibbled away. Head back home.",
+    "home": "Back to home"
+  }
+}

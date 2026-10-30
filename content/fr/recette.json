@@ -1,0 +1,75 @@
+{
+  "intro": "Texte d’introduction à renseigner.",
+  "steps": [
+    {
+      "n": 1,
+      "titre": "Ingrédients",
+      "icone": "ingredients",
+      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
+      "chiffre": "Chiffre clé à renseigner",
+      "placeholder": true
+    },
+    {
+      "n": 2,
+      "titre": "Mélanger",
+      "icone": "bol",
+      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
+      "chiffre": "Chiffre clé à renseigner",
+      "placeholder": true
+    },
+    {
+      "n": 3,
+      "titre": "Cuire",
+      "icone": "four",
+      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
+      "chiffre": "Chiffre clé à renseigner",
+      "placeholder": true
+    },
+    {
+      "n": 4,
+      "titre": "Emballer",
+      "icone": "sachet",
+      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
+      "chiffre": "Chiffre clé à renseigner",
+      "placeholder": true
+    },
+    {
+      "n": 5,
+      "titre": "Livrer",
+      "icone": "tricycle",
+      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
+      "chiffre": "Chiffre clé à renseigner",
+      "placeholder": true
+    },
+    {
+      "n": 6,
+      "titre": "Servir",
+      "icone": "servir",
+      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
+      "chiffre": "Chiffre clé à renseigner",
+      "placeholder": true
+    }
+  ],
+  "reperes": [
+    {
+      "valeur": "XXXX",
+      "label": "Date ou chiffre à renseigner",
+      "placeholder": true
+    },
+    {
+      "valeur": "XX",
+      "label": "Date ou chiffre à renseigner",
+      "placeholder": true
+    },
+    {
+      "valeur": "XXX",
+      "label": "Date ou chiffre à renseigner",
+      "placeholder": true
+    },
+    {
+      "valeur": "XXXX",
+      "label": "Date ou chiffre à renseigner",
+      "placeholder": true
+    }
+  ]
+}

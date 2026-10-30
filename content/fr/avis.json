@@ -1,0 +1,50 @@
+[
+  {
+    "completion": "j'ai besoin d'un petit croc",
+    "prenom": "Prénom A",
+    "ville": "Douala",
+    "placeholder": true
+  },
+  {
+    "completion": "la pause arrive",
+    "prenom": "Prénom B",
+    "ville": "Bonabéri",
+    "placeholder": true
+  },
+  {
+    "completion": "on partage entre amis",
+    "prenom": "Prénom C",
+    "ville": "Douala",
+    "placeholder": true
+  },
+  {
+    "completion": "le soir tombe",
+    "prenom": "Prénom D",
+    "ville": "Douala",
+    "placeholder": true
+  },
+  {
+    "completion": "il fait chaud dehors",
+    "prenom": "Prénom E",
+    "ville": "Bonabéri",
+    "placeholder": true
+  },
+  {
+    "completion": "je veux me faire plaisir",
+    "prenom": "Prénom F",
+    "ville": "Douala",
+    "placeholder": true
+  },
+  {
+    "completion": "je rentre du marché",
+    "prenom": "Prénom G",
+    "ville": "Bonabéri",
+    "placeholder": true
+  },
+  {
+    "completion": "la journée a été longue",
+    "prenom": "Prénom H",
+    "ville": "Douala",
+    "placeholder": true
+  }
+]

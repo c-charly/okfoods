@@ -1,0 +1,5 @@
+# pnpm 12 bloque par défaut les scripts d'installation des dépendances.
+# Seuls les paquets listés ici (true) peuvent exécuter leur script de build.
+allowBuilds:
+  esbuild: true
+  unrs-resolver: false

@@ -1,0 +1,18 @@
+{
+  "slug": "bonbon-fruite",
+  "name": "Bonbon Fruité",
+  "range": "Confiseries",
+  "envies": ["fruite", "sucre"],
+  "color": "#F8EF22",
+  "accentColor": "#2C3691",
+  "crumbColor": "#D3181F",
+  "image": "/images/produits/bonbon-fruite.png",
+  "kind": "bonbon",
+  "format": "Format à renseigner",
+  "flavors": ["Saveur 1", "Saveur 2"],
+  "description": "Description courte à renseigner.",
+  "tagline": "Un éclat de fruit.",
+  "moments": ["midi", "gouter"],
+  "order": 3,
+  "placeholder": true
+}
