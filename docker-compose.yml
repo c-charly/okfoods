@@ -6,8 +6,6 @@ services:
       args:
         NODE_VERSION: ${NODE_VERSION:-24}
     restart: unless-stopped
-    ports:
-      - '${PORT:-3000}:3000'
     environment:
       NODE_ENV: production
     env_file:
