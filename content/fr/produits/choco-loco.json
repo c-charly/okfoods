@@ -7,7 +7,7 @@
   "accentColor": "#F8EF22",
   "crumbColor": "#FFF8E6",
   "image": "/images/produits/choco-loco.png",
-  "kind": "Pâte à tartiner",
+  "kind": "tartine",
   "format": "Format",
   "flavors": ["Saveur 1", "Saveur 2"],
   "description": "Description.",

@@ -21,7 +21,7 @@ export const produitSchema = z.object({
   accentColor: hex,
   crumbColor: hex,
   image: z.string().optional(),
-  kind: z.enum(['biscuit', 'sachet', 'bonbon']).default('biscuit'),
+  kind: z.enum(['biscuit', 'sachet', 'bonbon', 'tartine']).default('biscuit'),
   format: z.string(),
   flavors: z.array(z.string()),
   description: z.string(),
