@@ -2,7 +2,7 @@
 import { MOMENTS, type Moment } from '~~/config/moments'
 import type { Produit } from '~/types/content'
 
-/** Accueil 3/6 — « L'heure de la pause » : le fond, le ciel SVG et la phrase changent ; un produit est suggéré. */
+/** Accueil 3/6 - " L'heure de la pause " : le fond, le ciel SVG et la phrase changent ; un produit est suggéré. */
 const props = defineProps<{ products: Produit[] }>()
 const { t } = useUi()
 const { moment, setMoment, envie } = useEnvie()
@@ -96,8 +96,8 @@ const suggestion = computed(() => {
               <NuxtLink
                 :to="`${localePath('/produits')}#${suggestion.slug}`"
                 class="mt-1 inline-flex min-h-11 items-center font-bold underline"
-                >{{ t('home.moment.discover') }} →</NuxtLink
-              >
+                >{{ t('home.moment.discover') }} <UiIcon name="arrow-right" size="h-5 w-5"
+              /></NuxtLink>
             </div>
           </div>
         </template>

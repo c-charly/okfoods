@@ -1,75 +1,75 @@
 {
-  "intro": "Texte d’introduction à renseigner.",
+  "intro": "",
   "steps": [
     {
       "n": 1,
-      "titre": "Ingrédients",
+      "titre": "Création",
       "icone": "ingredients",
-      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
-      "chiffre": "Chiffre clé à renseigner",
-      "placeholder": true
+      "texte": "OK FOODS CAMEROUN est une industrie agroalimentaire fabricant des biscuits, produits laitiers, bonbons, gaufrettes chewing-gums, et pâtes à tartiner.",
+      "chiffre": "1998",
+      "placeholder": false
     },
     {
       "n": 2,
-      "titre": "Mélanger",
+      "titre": "Biscuits",
       "icone": "bol",
-      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
-      "chiffre": "Chiffre clé à renseigner",
-      "placeholder": true
+      "texte": "D’un grain de blé à des milliers de biscuits vendus à ce jour. Notre entrée dans l’industrie des produits alimentaires a officiellement commencé ici.",
+      "chiffre": "2000",
+      "placeholder": false
     },
     {
       "n": 3,
-      "titre": "Cuire",
+      "titre": "produits Laitiers",
       "icone": "four",
-      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
-      "chiffre": "Chiffre clé à renseigner",
-      "placeholder": true
+      "texte": "Répondant à une demande du marché, nous avons décidé de diversifier notre portefeuille produits.",
+      "chiffre": "2004",
+      "placeholder": false
     },
     {
       "n": 4,
-      "titre": "Emballer",
+      "titre": "Gaufrettes",
       "icone": "sachet",
-      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
-      "chiffre": "Chiffre clé à renseigner",
-      "placeholder": true
+      "texte": "Nous avons mis en place une nouvelle gamme de produits. Aujourd’hui, nous sommes l’unique producteur local des gaufrettes.",
+      "chiffre": "2007",
+      "placeholder": false
     },
     {
       "n": 5,
-      "titre": "Livrer",
+      "titre": "confiseries MAXI",
       "icone": "tricycle",
-      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
-      "chiffre": "Chiffre clé à renseigner",
-      "placeholder": true
+      "texte": "En tant qu’acteur majeur de l’industrie agroalimentaire, nous avons décidé de fournir au marché des confiseries de très haute qualité à des prix abordables.",
+      "chiffre": "2013",
+      "placeholder": false
     },
     {
       "n": 6,
-      "titre": "Servir",
+      "titre": "CHOCO LOCO",
       "icone": "servir",
-      "texte": "Texte à renseigner : deux à trois phrases sur cette étape.",
-      "chiffre": "Chiffre clé à renseigner",
-      "placeholder": true
+      "texte": "Notre marque de pâte à tartiner au chocolat est dense et onctueuse avec un goût inégalé.",
+      "chiffre": "2021",
+      "placeholder": false
     }
   ],
   "reperes": [
     {
-      "valeur": "XXXX",
-      "label": "Date ou chiffre à renseigner",
-      "placeholder": true
+      "valeur": "22000",
+      "label": "Certifications ISO 22000 & 9001",
+      "placeholder": false
     },
     {
-      "valeur": "XX",
-      "label": "Date ou chiffre à renseigner",
-      "placeholder": true
+      "valeur": "9001",
+      "label": "Certifications ISO 9001",
+      "placeholder": false
     },
     {
-      "valeur": "XXX",
-      "label": "Date ou chiffre à renseigner",
-      "placeholder": true
+      "valeur": "5+",
+      "label": "Marques",
+      "placeholder": false
     },
     {
-      "valeur": "XXXX",
-      "label": "Date ou chiffre à renseigner",
-      "placeholder": true
+      "valeur": "1998",
+      "label": "Date de création",
+      "placeholder": false
     }
   ]
 }

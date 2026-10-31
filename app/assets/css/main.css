@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 @import './tokens.css';
 
-/* ───── Polices auto-hébergées (latin + latin étendu), font-display: swap ───── */
+/* ----- Polices auto-hébergées (latin + latin étendu), font-display: swap ----- */
 @font-face {
   font-family: 'Bagel Fat One';
   font-style: normal;
@@ -63,7 +63,7 @@
     U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
 }
 
-/* ───── Pont Tailwind ⇄ tokens (valeurs déclarées UNE seule fois dans tokens.css) ───── */
+/* ----- Pont Tailwind <-> tokens (valeurs déclarées UNE seule fois dans tokens.css) ----- */
 @theme inline {
   --color-ok-blue: var(--ok-blue);
   --color-ok-red: var(--ok-red);
@@ -132,7 +132,7 @@
   }
 }
 
-/* ───── Typographie utilitaire ───── */
+/* ----- Typographie utilitaire ----- */
 .font-display {
   font-family: var(--ok-font-display);
   font-weight: 400;
@@ -165,7 +165,7 @@
   margin-inline: auto;
 }
 
-/* ───── Couleurs SVG (jamais de couleur en dur dans les composants) ───── */
+/* ----- Couleurs SVG (jamais de couleur en dur dans les composants) ----- */
 .f-blue {
   fill: var(--ok-blue);
 }
@@ -215,7 +215,7 @@
   stroke: var(--ok-white);
 }
 
-/* ───── Formes organiques & bords « croqués » ───── */
+/* ----- Formes organiques & bords " croqués " ----- */
 .blob-a {
   border-radius: 62% 38% 54% 46% / 48% 56% 44% 52%;
 }
@@ -279,7 +279,7 @@ html.snap-soft {
   scroll-snap-type: y proximity;
 }
 
-/* ───── Animations : 3 états (full / lite / static) ───── */
+/* ----- Animations : 3 états (full / lite / static) ----- */
 @keyframes ok-float {
   0%,
   100% {
@@ -383,7 +383,7 @@ html[data-motion='lite'] .anim-heavy {
   }
 }
 
-/* Transition de page : fondu rapide (≤ 250 ms). La « morsure » desktop est dans PageBite.vue */
+/* Transition de page : fondu rapide (<= 250 ms). La " morsure " desktop est dans PageBite.vue */
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.2s ease;
@@ -393,7 +393,7 @@ html[data-motion='lite'] .anim-heavy {
   opacity: 0;
 }
 
-/* ───── Formulaires ───── */
+/* ----- Formulaires ----- */
 .field {
   min-height: 3rem;
   width: 100%;

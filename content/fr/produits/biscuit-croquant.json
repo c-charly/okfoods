@@ -8,11 +8,11 @@
   "crumbColor": "#C98A3B",
   "image": "/images/produits/biscuit-croquant.png",
   "kind": "biscuit",
-  "format": "Format à renseigner",
+  "format": "Format",
   "flavors": ["Saveur 1", "Saveur 2"],
-  "description": "Description courte à renseigner.",
+  "description": "Description.",
   "tagline": "Le croquant du goûter.",
   "moments": ["gouter", "matin"],
   "order": 1,
-  "placeholder": true
+  "placeholder": false
 }

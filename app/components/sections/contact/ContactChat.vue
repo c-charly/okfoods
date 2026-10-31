@@ -3,7 +3,7 @@ import type { ContactFlow } from '~/types/content'
 
 /**
  * Parcours en conversation (bonus, jamais l'unique voie : le formulaire classique est toujours en dessous).
- * Étapes et questions viennent de contact.json. « Candidat » redirige vers /team-bleue.
+ * Étapes et questions viennent de contact.json. " Candidat " redirige vers /team-bleue.
  */
 const props = defineProps<{ flow: ContactFlow; email: string }>()
 const emit = defineEmits<{ prefill: [text: string] }>()
@@ -87,7 +87,7 @@ async function reply(text: string) {
   await ask()
 }
 
-const recap = computed(() => answers.value.map((a) => `${a.question}\n→ ${a.answer}`))
+const recap = computed(() => answers.value.map((a) => `${a.question}\n- ${a.answer}`))
 const mailto = computed(() =>
   buildMailto(props.email, profil.value?.subject ?? '', [profil.value?.label ?? '', '', ...recap.value]),
 )
@@ -117,7 +117,7 @@ const toForm = () => emit('prefill', [`[${profil.value?.label}]`, ...recap.value
       </div>
       <div v-if="typing" class="flex">
         <p class="rounded-[1.6rem_1.6rem_1.6rem_0.4rem] bg-ok-blue px-5 py-3 text-ok-white" aria-hidden="true">
-          <span class="dots">•••</span>
+          <span class="typing-dots" aria-hidden="true"><i /><i /><i /></span>
         </p>
       </div>
     </div>
@@ -128,7 +128,9 @@ const toForm = () => emit('prefill', [`[${profil.value?.label}]`, ...recap.value
       </div>
 
       <div v-else-if="profil.redirect" class="flex flex-wrap gap-2">
-        <Btn :to="profil.redirect" variant="red">{{ t('contact.chat.goTeam') }} →</Btn>
+        <Btn :to="profil.redirect" variant="red"
+          >{{ t('contact.chat.goTeam') }} <UiIcon name="arrow-right" size="h-5 w-5"
+        /></Btn>
         <Btn variant="ghost" @click="reset">{{ t('contact.chat.restart') }}</Btn>
       </div>
 
@@ -170,10 +172,24 @@ const toForm = () => emit('prefill', [`[${profil.value?.label}]`, ...recap.value
   </div>
 </template>
 
-<style scoped>
-.dots {
-  display: inline-block;
+<style>
+.typing-dots {
+  display: inline-flex;
+  gap: 0.3rem;
+  align-items: center;
+}
+.typing-dots i {
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 9999px;
+  background: currentColor;
   animation: ok-pulse 0.9s ease-in-out infinite;
-  letter-spacing: 0.15em;
+}
+.typing-dots i:nth-child(2) {
+  animation-delay: 0.15s;
+}
+.typing-dots i:nth-child(3) {
+  animation-delay: 0.3s;
 }
 </style>

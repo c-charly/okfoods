@@ -4,26 +4,26 @@
     "ville": "Douala",
     "dateLimite": "2027-06-30",
     "actif": true,
-    "placeholder": true,
-    "intitule": "Poste à renseigner (exemple 1)",
-    "profil": "Profil recherché à renseigner"
+    "placeholder": false,
+    "intitule": "Opérateur·rice de production",
+    "profil": "Personne rigoureuse, attentive aux règles d’hygiène et à l’aise avec le travail en équipe en atelier."
   },
   {
     "id": "poste-02",
     "ville": "Douala",
-    "dateLimite": "2026-01-31",
+    "dateLimite": "2027-01-31",
     "actif": true,
-    "placeholder": true,
-    "intitule": "Poste à renseigner (exemple 2)",
-    "profil": "Profil recherché à renseigner"
+    "placeholder": false,
+    "intitule": "Commercial·e terrain",
+    "profil": "Personne dynamique, avec un bon sens du contact et un intérêt pour la vente et la relation client."
   },
   {
     "id": "poste-03",
     "ville": "Bonabéri",
-    "dateLimite": "2027-03-31",
-    "actif": true,
-    "placeholder": true,
-    "intitule": "Poste à renseigner (exemple 3)",
-    "profil": "Profil recherché à renseigner"
+    "dateLimite": "2026-03-31",
+    "actif": false,
+    "placeholder": false,
+    "intitule": "Technicien·ne de maintenance",
+    "profil": "Personne méthodique, formée en maintenance, avec un intérêt pour les équipements de production."
   }
 ]

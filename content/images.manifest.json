@@ -24,7 +24,7 @@
       "ratio": "libre",
       "minWidth": 1200,
       "minHeight": 0,
-      "description": "Produit « Biscuit Croquant » sans fond (PNG transparent)",
+      "description": "Produit ' Biscuit Croquant ' sans fond (PNG transparent)",
       "required": true
     },
     {
@@ -33,7 +33,7 @@
       "ratio": "libre",
       "minWidth": 1200,
       "minHeight": 0,
-      "description": "Produit « Lait Sucré » sans fond (PNG transparent)",
+      "description": "Produit ' Lait Sucré ' sans fond (PNG transparent)",
       "required": true
     },
     {
@@ -42,7 +42,7 @@
       "ratio": "libre",
       "minWidth": 1200,
       "minHeight": 0,
-      "description": "Produit « Bonbon Fruité » sans fond (PNG transparent)",
+      "description": "Produit ' Bonbon Fruité ' sans fond (PNG transparent)",
       "required": true
     },
     {
@@ -51,7 +51,7 @@
       "ratio": "libre",
       "minWidth": 1200,
       "minHeight": 0,
-      "description": "Produit « Biscuit Fondant » sans fond (PNG transparent)",
+      "description": "Produit ' Biscuit Fondant ' sans fond (PNG transparent)",
       "required": true
     },
     {
@@ -60,7 +60,7 @@
       "ratio": "libre",
       "minWidth": 1200,
       "minHeight": 0,
-      "description": "Produit « Gaufrette » sans fond (PNG transparent)",
+      "description": "Produit ' Gaufrette ' sans fond (PNG transparent)",
       "required": true
     },
     {
@@ -69,7 +69,7 @@
       "ratio": "libre",
       "minWidth": 1200,
       "minHeight": 0,
-      "description": "Produit « Confiserie Acidulée » sans fond (PNG transparent)",
+      "description": "Produit ' Confiserie Acidulée ' sans fond (PNG transparent)",
       "required": true
     },
     {
@@ -78,7 +78,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l'accueil)",
       "required": false
     },
     {
@@ -87,7 +87,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l'accueil)",
       "required": false
     },
     {
@@ -96,7 +96,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l'accueil)",
       "required": false
     },
     {
@@ -105,7 +105,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l'accueil)",
       "required": false
     },
     {
@@ -114,7 +114,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l'accueil)",
       "required": false
     },
     {
@@ -123,7 +123,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l'accueil)",
       "required": false
     },
     {
@@ -132,7 +132,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l'accueil)",
       "required": false
     },
     {
@@ -141,7 +141,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Photo de rue, mains ou marché (bandeau défilant de l’accueil)",
+      "description": "Photo de rue, mains ou marché (bandeau défilant de l'accueil)",
       "required": false
     },
     {
@@ -150,7 +150,7 @@
       "ratio": "3:2",
       "minWidth": 1200,
       "minHeight": 800,
-      "description": "Photo d’une étape de fabrication (page Recette)",
+      "description": "Photo d'une étape de fabrication (page Recette)",
       "required": false
     },
     {
@@ -159,7 +159,7 @@
       "ratio": "3:2",
       "minWidth": 1200,
       "minHeight": 800,
-      "description": "Photo d’une étape de fabrication (page Recette)",
+      "description": "Photo d'une étape de fabrication (page Recette)",
       "required": false
     },
     {
@@ -168,7 +168,7 @@
       "ratio": "3:2",
       "minWidth": 1200,
       "minHeight": 800,
-      "description": "Photo d’une étape de fabrication (page Recette)",
+      "description": "Photo d'une étape de fabrication (page Recette)",
       "required": false
     },
     {
@@ -177,7 +177,7 @@
       "ratio": "3:2",
       "minWidth": 1200,
       "minHeight": 800,
-      "description": "Photo d’une étape de fabrication (page Recette)",
+      "description": "Photo d'une étape de fabrication (page Recette)",
       "required": false
     },
     {
@@ -186,7 +186,7 @@
       "ratio": "3:2",
       "minWidth": 1200,
       "minHeight": 800,
-      "description": "Photo d’une étape de fabrication (page Recette)",
+      "description": "Photo d'une étape de fabrication (page Recette)",
       "required": false
     },
     {
@@ -204,7 +204,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {
@@ -213,7 +213,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {
@@ -222,7 +222,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {
@@ -231,7 +231,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {
@@ -240,7 +240,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {
@@ -249,7 +249,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {
@@ -258,7 +258,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {
@@ -267,7 +267,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {
@@ -276,7 +276,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {
@@ -285,7 +285,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {
@@ -294,7 +294,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {
@@ -303,7 +303,7 @@
       "ratio": "4:5",
       "minWidth": 800,
       "minHeight": 1000,
-      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l’image requise.",
+      "description": "Personne qui consomme un produit (page Ils en parlent). Autorisation de droit à l'image requise.",
       "required": false
     },
     {

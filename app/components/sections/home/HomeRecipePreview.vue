@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Etape } from '~/types/content'
 
-/** Accueil 5/6 — aperçu de la recette : 3 étapes, chiffres géants qui s'incrémentent, icônes SVG animées. */
+/** Accueil 5/6 - aperçu de la recette : 3 étapes, chiffres géants qui s'incrémentent, icônes SVG animées. */
 defineProps<{ steps: Etape[] }>()
 const { t } = useUi()
 const { mode, isStatic } = useMotion()
@@ -60,7 +60,9 @@ onBeforeUnmount(() => {
         </li>
       </ol>
       <div class="mt-10">
-        <Btn to="/recette" variant="yellow">{{ t('home.recipe.more') }} →</Btn>
+        <Btn to="/recette" variant="yellow"
+          >{{ t('home.recipe.more') }} <UiIcon name="arrow-right" size="h-5 w-5"
+        /></Btn>
       </div>
     </div>
   </section>

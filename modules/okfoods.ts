@@ -5,8 +5,8 @@ import * as S from '../schemas'
 
 /**
  * Module local OK Foods
- *  1. Indexe `public/images/**` → import virtuel `#build/okfoods/image-index.mjs`.
- *     Un emplacement d'image est « rempli » dès que son fichier existe : aucun code à toucher.
+ *  1. Indexe `public/images/**` -> import virtuel `#build/okfoods/image-index.mjs`.
+ *     Un emplacement d'image est " rempli " dès que son fichier existe : aucun code à toucher.
  *  2. Valide le contenu (schémas Zod + références croisées) et FAIT ÉCHOUER LE BUILD si invalide.
  *     Avertit pour le droit à l'image des croqueurs.
  */
@@ -62,7 +62,7 @@ export default defineNuxtModule({
       const res = schema.safeParse(data)
       if (!res.success) {
         for (const issue of res.error.issues)
-          errors.push(`${label} › ${issue.path.join('.') || '(racine)'} : ${issue.message}`)
+          errors.push(`${label} > ${issue.path.join('.') || '(racine)'} : ${issue.message}`)
       }
       return res.success
     }
@@ -83,7 +83,7 @@ export default defineNuxtModule({
           const data = readJson(join(produitsDir, file))
           check(tag(`produits/${file}`), S.produitSchema, data)
           if (data.slug && `${data.slug}.json` !== file)
-            errors.push(`${tag(`produits/${file}`)} : le slug « ${data.slug} » doit correspondre au nom du fichier`)
+            errors.push(`${tag(`produits/${file}`)} : le slug " ${data.slug} " doit correspondre au nom du fichier`)
           slugs.add(data.slug)
         }
       }
@@ -106,6 +106,14 @@ export default defineNuxtModule({
         check(tag(name), schema, readJson(f(name)))
       }
 
+      if (existsSync(f('site.json'))) {
+        const exemples = (readJson(f('site.json')).social ?? []).filter((x: { placeholder?: boolean }) => x.placeholder)
+        if (exemples.length)
+          warnings.push(
+            `${tag('site.json')} : ${exemples.length} lien(s) de reseaux sociaux d'exemple (URL generiques) a remplacer.`,
+          )
+      }
+
       if (existsSync(f('croqueurs.json'))) {
         const list = readJson(f('croqueurs.json'))
         if (check(tag('croqueurs.json'), S.croqueursSchema, list)) {
@@ -115,18 +123,18 @@ export default defineNuxtModule({
               : new Set(readdirSync(join(root, 'content/fr/produits')).map((x) => x.replace(/\.json$/, '')))
           for (const c of list) {
             if (!frSlugs.has(c.produit) && !slugs.has(c.produit))
-              errors.push(`${tag('croqueurs.json')} › ${c.id} : le produit « ${c.produit} » n'existe pas`)
+              errors.push(`${tag('croqueurs.json')} > ${c.id} : le produit " ${c.produit} " n'existe pas`)
             if (!c.placeholder && !c.consentement)
               warnings.push(
-                `${c.id} : photo réelle SANS consentement (droit à l'image) — elle ne sera pas affichée tant que « consentement » n'est pas à true.`,
+                `${c.id} : photo réelle SANS consentement (droit à l'image) - elle ne sera pas affichée tant que " consentement " n'est pas à true.`,
               )
             if (!c.placeholder && c.image && !images.has(c.image))
-              warnings.push(`${c.id} : fichier image introuvable (${c.image}) — le placeholder sera utilisé.`)
+              warnings.push(`${c.id} : fichier image introuvable (${c.image}) - le placeholder sera utilisé.`)
           }
           const featured = list.filter((c: any) => c.enAvant).length
           if (featured < 3 || featured > 5)
             warnings.push(
-              `croqueurs.json (${lang}) : ${featured} scène(s) « enAvant » — 3 à 5 attendues pour « Face à face ».`,
+              `croqueurs.json (${lang}) : ${featured} scène(s) " enAvant " - 3 à 5 attendues pour " Face à face ".`,
             )
         }
       } else if (lang === 'fr') errors.push(`${tag('croqueurs.json')} est obligatoire.`)

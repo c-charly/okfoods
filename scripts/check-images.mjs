@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// pnpm images:check — compare le manifeste d'images avec ce qui est réellement dans public/.
+// pnpm images:check - compare le manifeste d'images avec ce qui est réellement dans public/.
 import { existsSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 
@@ -14,13 +14,13 @@ const present = (path) => {
 let missingRequired = 0
 const rows = manifest.images.map((i) => ({ ok: present(i.path), ...i }))
 for (const r of rows) {
-  const mark = r.ok ? '✅' : r.required ? '❌' : '⬜'
+  const mark = r.ok ? '[ok]' : r.required ? '[!!]' : '[--]'
   console.log(
-    `${mark} ${r.path.padEnd(46)} ${String(r.ratio).padEnd(9)} ≥ ${r.minWidth}×${r.minHeight || '—'}  ${r.required ? '(requis)' : '(optionnel)'}`,
+    `${mark} ${r.path.padEnd(46)} ${String(r.ratio).padEnd(9)} >= ${r.minWidth}x${r.minHeight || '-'}  ${r.required ? '(requis)' : '(optionnel)'}`,
   )
   if (!r.ok && r.required) missingRequired++
 }
 const have = rows.filter((r) => r.ok).length
 console.log(
-  `\n${have}/${rows.length} images présentes — ${missingRequired} requise(s) manquante(s). Les manquantes s'affichent en placeholder.`,
+  `\n${have}/${rows.length} images présentes - ${missingRequired} requise(s) manquante(s). Les manquantes s'affichent en placeholder.`,
 )

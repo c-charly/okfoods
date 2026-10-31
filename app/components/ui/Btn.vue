@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/** Bouton / lien. Texte ≥ 19 px en gras (« grand texte » WCAG), zone tactile ≥ 44×44 px. */
+/** Bouton / lien. Texte >= 19 px en gras (" grand texte " WCAG), zone tactile >= 44x44 px. */
 const props = withDefaults(
   defineProps<{
     to?: string

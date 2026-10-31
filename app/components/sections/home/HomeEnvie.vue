@@ -2,7 +2,7 @@
 import { ENVIES, type Envie } from '~~/config/envies'
 import type { Produit } from '~/types/content'
 
-/** Accueil 2/6 — « T'as envie de quoi ? » : 4 bulles typographiques ; le choix met en avant les produits correspondants (champ `envies`). */
+/** Accueil 2/6 - " T'as envie de quoi ? " : 4 bulles typographiques ; le choix met en avant les produits correspondants (champ `envies`). */
 const props = defineProps<{ products: Produit[] }>()
 const { t } = useUi()
 const { envie, setEnvie } = useEnvie()

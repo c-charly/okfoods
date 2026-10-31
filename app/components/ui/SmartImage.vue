@@ -1,7 +1,7 @@
 <script setup lang="ts">
 /**
  * Image pilotée par le manifeste (`content/images.manifest.json`) :
- *  fichier présent → image optimisée (AVIF/WebP, lazy, width/height réservés) ; absent → placeholder.
+ *  fichier présent -> image optimisée (AVIF/WebP, lazy, width/height réservés) ; absent -> placeholder.
  * Aucun code à modifier quand les vraies images arrivent. `alt` est toujours défini.
  */
 const props = withDefaults(

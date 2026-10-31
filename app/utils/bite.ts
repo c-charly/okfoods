@@ -1,6 +1,6 @@
 /**
  * Morsures : calcul des positions à partir du CONTOUR RÉEL d'une image (pixels non transparents),
- * coordonnées normalisées dans un repère 0–100 (viewBox du masque SVG).
+ * coordonnées normalisées dans un repère 0-100 (viewBox du masque SVG).
  */
 export interface Pt {
   x: number
@@ -22,7 +22,7 @@ export function mulberry32(seed: number) {
   }
 }
 
-/** Pixels d'ALPHA (RGBA → on lit 1 valeur sur 4) → points du bord, normalisés 0–100. */
+/** Pixels d'ALPHA (RGBA -> on lit 1 valeur sur 4) -> points du bord, normalisés 0-100. */
 export function edgePointsFromRgba(rgba: ArrayLike<number>, w: number, h: number, threshold = 40): Pt[] {
   const solid = (x: number, y: number) =>
     x >= 0 && y >= 0 && x < w && y < h && (rgba[(y * w + x) * 4 + 3] ?? 0) > threshold
@@ -63,7 +63,7 @@ export function silhouetteEdge(kind: 'biscuit' | 'sachet' | 'bonbon'): Pt[] {
 const TARGETS = [-Math.PI / 4, Math.PI * 0.95, Math.PI / 3]
 
 /**
- * 3 niveaux de morsure ; chaque niveau = 3 cercles qui « rongent » le bord (aspect denté).
+ * 3 niveaux de morsure ; chaque niveau = 3 cercles qui " rongent " le bord (aspect denté).
  * Les centres sont posés SUR le contour réel, légèrement vers l'intérieur.
  */
 export function computeBitePositions(edge: Pt[], levels = 3, seed = 7): Hole[][] {

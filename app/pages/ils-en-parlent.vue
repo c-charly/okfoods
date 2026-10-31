@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Avis, Croqueur, Produit } from '~/types/content'
 
-/** « Ils en parlent » : 3 ouvertures, 3 mécaniques — A) tableau de gare, B) mosaïque de croqueurs, C) face à face. */
+/** " Ils en parlent " : 3 ouvertures, 3 mécaniques - A) tableau de gare, B) mosaïque de croqueurs, C) face à face. */
 const { locale } = useI18n()
 const { data: avis } = await useAsyncData('avis', () => loadBody<Avis>('avis', locale.value), {
   watch: [locale],

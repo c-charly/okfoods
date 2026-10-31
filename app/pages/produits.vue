@@ -2,7 +2,7 @@
 import { ENVIES } from '~~/config/envies'
 import type { Produit } from '~/types/content'
 
-/** « Le Défilé » : aucune grille, aucune carte. Un produit par écran, couleur qui balaie, index collant, filtre d'envie. */
+/** " Le Défilé " : aucune grille, aucune carte. Un produit par écran, couleur qui balaie, index collant, filtre d'envie. */
 const { locale } = useI18n()
 const { t } = useUi()
 const { envie, setEnvie } = useEnvie()
@@ -51,21 +51,21 @@ watch(list, async () => {
         <p class="sub">{{ t('produits.kicker') }}</p>
         <h1 class="giant mt-1 text-[clamp(3rem,13vw,11rem)]">{{ t('produits.title') }}</h1>
         <p class="mt-4 max-w-[40ch] text-[1.2rem] font-bold">{{ t('produits.intro') }}</p>
-        <div class="mt-6 flex flex-wrap items-center gap-2" role="group" :aria-label="t('produits.filter')">
+        <!-- <div class="mt-6 flex flex-wrap items-center gap-2" role="group" :aria-label="t('produits.filter')">
           <span class="mr-1 font-bold">{{ t('produits.filter') }} :</span>
           <Pill :active="!envie" @click="setEnvie(null)">{{ t('produits.all') }}</Pill>
           <Pill v-for="e in ENVIES" :key="e" :active="envie === e" @click="setEnvie(envie === e ? null : e)">{{
             t(`envies.${e}`)
           }}</Pill>
-        </div>
+        </div> -->
       </div>
-      <div class="mt-8 flex h-12 overflow-hidden md:h-16" aria-hidden="true">
+      <!-- <div class="mt-8 flex h-12 overflow-hidden md:h-16" aria-hidden="true">
         <span v-for="p in list" :key="p.slug" class="bite-top block flex-1" :style="{ background: p.color }" />
-      </div>
+      </div> -->
     </header>
 
     <nav
-      class="sticky top-0 z-40 border-y-2 border-ok-blue bg-ok-cream text-ok-blue md:top-14"
+      class="sticky top-0 z-40 border-y-2 border-ok-blue bg-ok-cream text-ok-blue lg:top-14"
       :aria-label="t('produits.jump')"
     >
       <ul

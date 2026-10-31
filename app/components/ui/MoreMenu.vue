@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/** Menu plein écran (mobile) : liens secondaires, langue, « Réduire les animations ». <dialog> natif = focus géré. */
+/** Menu plein écran (mobile) : liens secondaires, langue, " Réduire les animations ". <dialog> natif = focus géré. */
 const { t } = useUi()
 const { links } = useNavLinks()
 const localePath = useLocalePath()
@@ -21,7 +21,7 @@ watch(
 <template>
   <dialog
     ref="dlg"
-    class="on-dark m-0 h-full max-h-none w-full max-w-none border-0 bg-ok-blue p-0 text-ok-white md:hidden"
+    class="on-dark m-0 h-full max-h-none w-full max-w-none border-0 bg-ok-blue p-0 text-ok-white lg:hidden"
     :aria-label="t('nav.moreTitle')"
     @close="open = false"
   >
@@ -34,7 +34,7 @@ watch(
           :aria-label="t('a11y.closeMenu')"
           @click="open = false"
         >
-          <NavIcon name="close" />
+          <UiIcon name="close" />
         </button>
       </div>
       <ul class="mt-8 flex flex-1 flex-col justify-center gap-2">
@@ -45,9 +45,6 @@ watch(
             :class="l.active ? 'text-ok-yellow' : 'text-ok-white'"
             >{{ l.label }}</NuxtLink
           >
-        </li>
-        <li class="pt-4">
-          <Btn to="/contact" variant="red">{{ t('nav.partner') }}</Btn>
         </li>
       </ul>
       <div class="mt-8 flex flex-wrap items-center gap-3">

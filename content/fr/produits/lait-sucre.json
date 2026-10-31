@@ -1,18 +1,18 @@
 {
   "slug": "lait-sucre",
-  "name": "Lait Sucré",
-  "range": "Lait sucré",
-  "envies": ["fondant", "sucre"],
+  "name": "Top-Milk",
+  "range": "Top-Milk",
+  "envies": ["sucre"],
   "color": "#D3181F",
   "accentColor": "#F8EF22",
   "crumbColor": "#FFF8E6",
   "image": "/images/produits/lait-sucre.png",
   "kind": "sachet",
-  "format": "Format à renseigner",
-  "flavors": ["Saveur 1", "Saveur 2"],
-  "description": "Description courte à renseigner.",
+  "format": "15g, 19g, 370g",
+  "flavors": ["Vanille", "Chocolat", "Fraise"],
+  "description": "Le lait entier Top-Milk s’invite dans votre famille pour une bonne alimentation au quotidien, en apportant du calcium, des protéines et des vitamines. Ces nutriments contribuent à la croissance saine de vos enfants.",
   "tagline": "Tout en douceur.",
   "moments": ["matin", "soir"],
   "order": 2,
-  "placeholder": true
+  "placeholder": false
 }

@@ -1,7 +1,7 @@
 import type { Dict } from '~/types/content'
 
 /**
- * Lecture du contenu localisé. Règle : « un contenu manquant en EN retombe sur le FR (jamais de page vide) ».
+ * Lecture du contenu localisé. Règle : " un contenu manquant en EN retombe sur le FR (jamais de page vide) ".
  * Collections : `<nom>_fr` et `<nom>_en` (voir content.config.ts).
  */
 const q = (name: string, lang: string): any => (queryCollection as any)(`${name}_${lang}`)

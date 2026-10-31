@@ -1,6 +1,6 @@
 /**
- * Dégradation automatique des animations — 3 états : full (desktop), lite (mobile / appareil lent), static (reduced-motion).
- * Le bouton « Réduire les animations » force `static` et mémorise le choix.
+ * Dégradation automatique des animations - 3 états : full (desktop), lite (mobile / appareil lent), static (reduced-motion).
+ * Le bouton " Réduire les animations " force `static` et mémorise le choix.
  */
 export type MotionMode = 'full' | 'lite' | 'static'
 const STORAGE_KEY = 'okfoods:reduce-motion'
@@ -60,7 +60,7 @@ export function useMotion() {
 
     // Mise en page : décidée UNE fois au chargement (sections hautes + contenu collant seulement en mode complet).
     // La sonde de fluidité ne la modifie jamais en cours de visite (pas de saut de page) ; seul le choix
-    // volontaire « Réduire les animations » aplatit la mise en page.
+    // volontaire " Réduire les animations " aplatit la mise en page.
     const root = document.documentElement
     root.dataset.layout = mode.value === 'full' ? 'tall' : 'flat'
     watchEffect(() => {
@@ -68,7 +68,7 @@ export function useMotion() {
       if (mode.value === 'static') root.dataset.layout = 'flat'
     })
 
-    // Mesure du framerate sur les premières secondes : sous ≈ 30 fps → mode allégé
+    // Mesure du framerate sur les premières secondes : sous ~ 30 fps -> mode allégé
     if (mode.value !== 'static') {
       let frames = 0
       let start = 0
@@ -90,7 +90,7 @@ export function useMotion() {
     }
   }
 
-  /** Vrai si la mise en page « haute » (défilement piloté) a été retenue au chargement. */
+  /** Vrai si la mise en page " haute " (défilement piloté) a été retenue au chargement. */
   const isTall = () => import.meta.client && document.documentElement.dataset.layout === 'tall'
 
   return {

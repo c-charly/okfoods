@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/** Pied de page : « Il ne reste que des miettes » — un tas de miettes qu'on disperse (physique desktop, canvas léger mobile). */
+/** Pied de page : " Il ne reste que des miettes " - un tas de miettes qu'on disperse (physique desktop, canvas léger mobile). */
 const { t } = useUi()
 const { links } = useNavLinks()
 const lieu = useLieu()
@@ -13,7 +13,7 @@ const telHref = computed(() =>
 
 <template>
   <footer
-    class="on-dark relative overflow-hidden bg-ok-blue pb-[calc(var(--bottom-nav-h)+var(--safe-bottom))] text-ok-white md:pb-0"
+    class="on-dark relative overflow-hidden bg-ok-blue pb-[calc(var(--bottom-nav-h)+var(--safe-bottom))] text-ok-white lg:pb-0"
   >
     <div class="wrap pt-16 md:pt-24">
       <p class="giant text-[clamp(2.6rem,10.5vw,9rem)] !leading-[0.85]" aria-hidden="false">{{ t('footer.title') }}</p>
@@ -52,22 +52,30 @@ const telHref = computed(() =>
               t('footer.privacy')
             }}</NuxtLink>
           </li>
-          <li v-for="s in site?.social ?? []" :key="s.name">
-            <a
-              :href="s.url"
-              rel="noopener noreferrer"
-              target="_blank"
-              class="inline-flex min-h-11 items-center underline"
-              >{{ s.name }}</a
-            >
-          </li>
         </ul>
       </nav>
-      <div class="flex flex-col items-start gap-3">
+      <div class="flex flex-col items-start gap-4">
         <LangSwitch />
         <MotionToggle />
+        <section v-if="site?.social?.length" aria-labelledby="f-follow">
+          <h2 id="f-follow" class="font-display mb-2 text-xl">{{ t('footer.follow') }}</h2>
+          <ul class="flex flex-wrap gap-2">
+            <li v-for="s in site.social" :key="s.name">
+              <a
+                :href="s.url"
+                target="_blank"
+                rel="noopener noreferrer"
+                :aria-label="s.name"
+                :title="s.name"
+                class="grid h-11 w-11 place-items-center rounded-full border-2 border-current transition-colors hover:border-ok-yellow hover:bg-ok-yellow hover:text-ok-blue"
+              >
+                <SocialIcon :name="s.name" />
+              </a>
+            </li>
+          </ul>
+        </section>
       </div>
     </div>
-    <p class="wrap pb-8 text-sm opacity-90">© {{ year }} {{ site?.nom }}. {{ t('footer.rights') }}</p>
+    <p class="wrap pb-8 text-sm opacity-90">&copy; {{ year }} {{ site?.nom }}. {{ t('footer.rights') }}</p>
   </footer>
 </template>

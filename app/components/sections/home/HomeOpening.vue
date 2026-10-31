@@ -2,9 +2,9 @@
 import type { Produit } from '~/types/content'
 
 /**
- * Accueil 1/6 — « Le Sachet ».
+ * Accueil 1/6 - " Le Sachet ".
  *  desktop : le sachet se déchire AU SCROLL (section haute + contenu collant natif, pas de scroll-jacking) ;
- *  mobile  : il se déchire tout seul en ≈ 2 s (bouton « Passer ») ; reduced-motion : état ouvert, sans mouvement.
+ *  mobile  : il se déchire tout seul en ~ 2 s (bouton " Passer ") ; reduced-motion : état ouvert, sans mouvement.
  * Le titre et la phrase de marque sont dans le DOM et visibles dès la première seconde.
  */
 const props = defineProps<{ products: Produit[] }>()
@@ -105,7 +105,7 @@ onMounted(async () => {
         scrollTrigger: { trigger: el, start: 'top top', end: 'bottom bottom', scrub: 0.6 },
       })
     } else {
-      gsap.delayedCall(0.25, () => line.play()) // mobile / appareil lent : automatique, ≈ 2 s
+      gsap.delayedCall(0.25, () => line.play()) // mobile / appareil lent : automatique, ~ 2 s
     }
   }, el)
 })
@@ -189,7 +189,9 @@ const tear = () => {
       <div class="mt-3 flex min-h-12 flex-wrap items-center justify-center gap-3">
         <Btn variant="blue" class="tear-btn" @click="tear">{{ t('home.open.tear') }}</Btn>
         <Btn variant="ghost" class="skip-btn" @click="skip">{{ t('home.open.skip') }}</Btn>
-        <p class="opening-hint font-bold" aria-hidden="true">↓ {{ t('home.open.scroll') }}</p>
+        <p class="opening-hint font-bold" aria-hidden="true">
+          <UiIcon name="arrow-down" size="h-5 w-5" />{{ t('home.open.scroll') }}
+        </p>
       </div>
     </div>
   </section>
@@ -215,7 +217,9 @@ html[data-layout='flat']:not([data-motion='static']) .skip-btn {
   display: inline-flex;
 }
 html[data-layout='tall']:not([data-motion='static']) .opening-hint {
-  display: block;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 @media (hover: hover) and (pointer: fine) and (min-width: 1024px) {
   html[data-layout='tall'] .opening {
@@ -227,7 +231,7 @@ html[data-layout='tall']:not([data-motion='static']) .opening-hint {
     height: calc(100svh - 3.5rem);
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .opening-stick {
     min-height: calc(100svh - 3.5rem - var(--bottom-nav-h));
   }

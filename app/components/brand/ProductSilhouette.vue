@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/** Silhouette de repli (sachet, biscuit ou bonbon) dessinée en SVG, repère 0–100. À placer dans un <svg viewBox="0 0 100 100">. */
+/** Silhouette de repli (sachet, biscuit ou bonbon) dessinée en SVG, repère 0-100. À placer dans un <svg viewBox="0 0 100 100">. */
 const props = defineProps<{ kind: 'biscuit' | 'sachet' | 'bonbon'; name: string; color: string; accent: string }>()
 // Le fond d'un écran produit a la couleur du produit : le corps de la silhouette prend donc la couleur d'accent.
 const tone = computed(() => (toneOn(props.accent) === 'light' ? 'f-white' : 'f-ink'))

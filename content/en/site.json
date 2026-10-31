@@ -1,7 +1,28 @@
 {
   "nom": "OK Foods Cameroun",
   "slogan": "Tagline to be provided",
-  "social": [],
+  "social": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/",
+      "placeholder": true
+    },
+    {
+      "name": "Instagram",
+      "url": "https://www.instagram.com/",
+      "placeholder": true
+    },
+    {
+      "name": "TikTok",
+      "url": "https://www.tiktok.com/",
+      "placeholder": true
+    },
+    {
+      "name": "WhatsApp",
+      "url": "https://wa.me/",
+      "placeholder": true
+    }
+  ],
   "whatsappRecrutement": "",
   "emailContact": "a-renseigner@example.com",
   "legal": {

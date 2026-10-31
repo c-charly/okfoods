@@ -1,5 +1,5 @@
 /*
- * DESIGN TOKENS — seule source de vérité des couleurs, polices et tailles.
+ * DESIGN TOKENS - seule source de vérité des couleurs, polices et tailles.
  * Tailwind les consomme via `@theme inline` dans main.css : aucune couleur en dur dans les composants.
  */
 :root {

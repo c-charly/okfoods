@@ -103,7 +103,7 @@ export const lieuSchema = z.object({
 export const siteSchema = z.object({
   nom: z.string(),
   slogan: z.string(),
-  social: z.array(z.object({ name: z.string(), url: z.string() })),
+  social: z.array(z.object({ name: z.string(), url: z.string(), placeholder })),
   whatsappRecrutement: z.string(),
   emailContact: z.string(),
   legal: z.object({

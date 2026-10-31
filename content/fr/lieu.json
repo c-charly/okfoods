@@ -1,10 +1,10 @@
 {
-  "nom": "Lieu de Bonabéri",
+  "nom": "Bonabéri",
   "nature": "Nature du lieu à confirmer (siège, usine, entrepôt ou accueil du public).",
-  "adresse": "Adresse à renseigner, Bonabéri, Douala",
-  "telephone": "Téléphone à renseigner",
-  "email": "a-renseigner@example.com",
-  "horaires": "Horaires à renseigner",
-  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Bonab%C3%A9ri%2C+Douala%2C+Cameroun",
-  "placeholder": true
+  "adresse": "B.P 3033 DOUALA, Bonaberi / Derriere Santa Lucia / LT, Cameroon",
+  "telephone": "+237 233 39 26 70 / +237 233 39 26 71",
+  "email": "contact@okfoods-cam.com / info@okfoods-cam.com",
+  "horaires": "7J/7 de 8h à 17h",
+  "mapsUrl": "https://maps.google.com/?cid=14265126892775480445&g_mp=CiVnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLkdldFBsYWNlEAMYASAF",
+  "placeholder": false
 }

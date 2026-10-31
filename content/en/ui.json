@@ -23,7 +23,6 @@
     "team": "Blue team",
     "words": "What they say",
     "contact": "Contact",
-    "partner": "Become a partner",
     "moreTitle": "More pages",
     "findShort": "Find us"
   },
@@ -37,7 +36,8 @@
   "lang": {
     "label": "Language",
     "fr": "Français",
-    "en": "English"
+    "en": "English",
+    "switch": "Change language"
   },
   "placeholder": {
     "badge": "Sample content",
@@ -50,7 +50,8 @@
     "links": "Useful links",
     "legal": "Legal notice",
     "privacy": "Privacy",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "follow": "Follow us"
   },
   "seo": {
     "home": {
@@ -66,7 +67,7 @@
       "description": "From ingredients to your hand: how an OK Foods product is made and delivered."
     },
     "find": {
-      "title": "Find us: Douala – Bonabéri",
+      "title": "Find us: Douala - Bonabéri",
       "description": "Where to find OK Foods in Douala and Bonabéri: address, hours and directions."
     },
     "team": {
@@ -110,14 +111,14 @@
     "open": {
       "kicker": "OK Foods Cameroon",
       "title": "OK Foods",
-      "line": "It crunches, it melts, it’s made to share.",
+      "line": "It crunches, it melts, it's made to share.",
       "tear": "Tear the bag open",
       "skip": "Skip the intro",
       "scroll": "Scroll down"
     },
     "envie": {
       "title": "What are you craving?",
-      "hint": "Tap a bubble and we’ll show what goes with it.",
+      "hint": "Tap a bubble and we'll show what goes with it.",
       "pick": "For your {envie} craving",
       "none": "Pick a craving to see matching products.",
       "see": "See the whole parade",
@@ -238,7 +239,7 @@
     "kicker": "What they say",
     "title": "What they say",
     "a": {
-      "lead": "I eat OK Foods when…",
+      "lead": "I eat OK Foods when...",
       "all": "See all answers",
       "hide": "Hide answers",
       "by": "by",
@@ -247,7 +248,7 @@
     "b": {
       "title": "The biters",
       "intro": "Real people, real bites.",
-      "open": "View {name}’s photo",
+      "open": "View {name}'s photo",
       "viewer": "Photo viewer",
       "of": "{n} of {total}"
     },
@@ -257,7 +258,7 @@
     }
   },
   "contact": {
-    "kicker": "Let’s talk",
+    "kicker": "Let's talk",
     "title": "Shall we chat?",
     "intro": "Distributor, partner, press or just curious: pick your profile.",
     "noOrder": "There is no online ordering: here, we talk partnerships.",
@@ -270,19 +271,19 @@
       "useForm": "Send via the form",
       "candidate": "To apply, head to the Blue team page.",
       "goTeam": "Go to the Blue team",
-      "placeholder": "Type here…",
+      "placeholder": "Type here...",
       "send": "Send",
-      "who": "You are more of a…"
+      "who": "You are more of a..."
     },
     "form": {
-      "prefer": "I’d rather use a form",
+      "prefer": "I'd rather use a form",
       "title": "Classic form",
       "name": "Name",
       "email": "Email",
       "phone": "Phone",
       "message": "Message",
       "send": "Send",
-      "sending": "Sending…",
+      "sending": "Sending...",
       "success": "Thanks! Your message is on its way.",
       "demo": "Demo mode: message saved in the logs, no email sent.",
       "error": "Sending failed. Try again or email us.",

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/** Pastille (filtre, index). Zone tactile ≥ 44 px. */
+/** Pastille (filtre, index). Zone tactile >= 44 px. */
 defineProps<{ active?: boolean; as?: 'button' | 'a'; href?: string }>()
 </script>
 

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /**
- * « La Tournée » : illustration SVG stylisée de Douala → Bonabéri par le pont du Wouri.
+ * " La Tournée " : illustration SVG stylisée de Douala -> Bonabéri par le pont du Wouri.
  * Un tricycle suit le tracé (scroll sur desktop ; automatique à l'arrivée dans la zone sur mobile),
  * en laissant une traînée de miettes. Reduced-motion : le tricycle est déjà arrivé, sans mouvement.
  */
@@ -39,7 +39,7 @@ function setP(p: number) {
   if (!r || !g) return
   const pt = r.getPointAtLength(L * p)
   const ahead = r.getPointAtLength(Math.min(L, L * p + 3))
-  const slope = Math.atan2(ahead.y - pt.y, ahead.x - pt.x) * (180 / Math.PI) // route vers la gauche : ≈ 180° ± pente
+  const slope = Math.atan2(ahead.y - pt.y, ahead.x - pt.x) * (180 / Math.PI) // route vers la gauche : ~ 180 deg +/- pente
   const tilt = Math.max(-14, Math.min(14, (slope > 0 ? slope - 180 : slope + 180) * -0.5))
   g.setAttribute('transform', `translate(${pt.x.toFixed(1)} ${pt.y.toFixed(1)}) rotate(${tilt.toFixed(1)})`)
   if (trail.value) trail.value.style.strokeDashoffset = String(L * (1 - p))
@@ -100,7 +100,7 @@ onBeforeUnmount(() => ctx?.revert())
       viewBox="0 0 640 400"
       class="h-auto w-full"
       role="img"
-      :aria-label="`${t('trouver.from')} → ${t('trouver.bridge')} → ${t('trouver.to')}`"
+      :aria-label="`${t('trouver.from')}, ${t('trouver.bridge')}, ${t('trouver.to')}`"
     >
       <rect width="640" height="400" rx="36" class="f-cream" />
       <!-- Le Wouri -->

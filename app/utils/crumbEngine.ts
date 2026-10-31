@@ -1,7 +1,7 @@
 /**
  * Moteur de miettes.
- *  - desktop : physique Matter.js (import dynamique), ≤ 150 particules
- *  - mobile / appareil lent : particules canvas simples (gravité + rebond), ≈ 20 max
+ *  - desktop : physique Matter.js (import dynamique), <= 150 particules
+ *  - mobile / appareil lent : particules canvas simples (gravité + rebond), ~ 20 max
  * Les deux exposent la même API et se nettoient entièrement avec `destroy()` (aucune fuite mémoire).
  */
 export interface CrumbEngine {
@@ -35,7 +35,7 @@ function setupCanvas(canvas: HTMLCanvasElement, maxDpr: number) {
 
 const rnd = (a: number, b: number) => a + Math.random() * (b - a)
 
-/* ───────────────────────── Version légère (canvas) ───────────────────────── */
+/* ------------------------- Version légère (canvas) ------------------------- */
 interface P {
   x: number
   y: number
@@ -215,7 +215,7 @@ function createLite(canvas: HTMLCanvasElement, o: CrumbOptions): CrumbEngine {
   return engine
 }
 
-/* ───────────────────────── Version physique (Matter.js) ───────────────────────── */
+/* ------------------------- Version physique (Matter.js) ------------------------- */
 async function createMatter(canvas: HTMLCanvasElement, o: CrumbOptions): Promise<CrumbEngine> {
   const Matter = (await import('matter-js')).default
   const { Engine, Bodies, Body, Composite } = Matter

@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Recette } from '~/types/content'
 
-/** « La Recette » : comment un produit arrive dans la main du consommateur, en étapes (3 à 8, pilotées par recette.json). */
+/** " La Recette " : comment un produit arrive dans la main du consommateur, en étapes (3 à 8, pilotées par recette.json). */
 const { locale } = useI18n()
 const { t } = useUi()
 const { data: recette } = await useAsyncData('recette', () => loadOne<Recette>('recette', locale.value), {
@@ -24,7 +24,7 @@ useSeo('recipe')
               <a
                 :href="`#step-${s.n}`"
                 class="inline-flex min-h-11 items-center rounded-full border-2 border-current px-4 font-bold no-underline"
-                >{{ s.n }} · {{ s.titre }}</a
+                >{{ s.n }}. {{ s.titre }}</a
               >
             </li>
           </ul>

@@ -21,7 +21,7 @@ for (const path of PAGES) {
   })
 }
 
-test('« Réduire les animations » est accessible et mémorisé', async ({ page }) => {
+test('" Réduire les animations " est accessible et mémorisé', async ({ page }) => {
   await page.goto('/')
   await page
     .getByRole('button', { name: /Réduire les animations/ })
@@ -32,7 +32,7 @@ test('« Réduire les animations » est accessible et mémorisé', async ({ page
   await expect(page.locator('html')).toHaveAttribute('data-motion', 'static')
 })
 
-test('produits : croquer 3 fois puis « Remanger »', async ({ page }) => {
+test('produits : croquer 3 fois puis " Remanger "', async ({ page }) => {
   await page.goto('/produits')
   const first = page.locator('[data-slug]').first()
   await first.scrollIntoViewIfNeeded()
@@ -45,4 +45,27 @@ test('contact : le formulaire classique est toujours disponible', async ({ page 
   await page.goto('/contact')
   await expect(page.getByLabel('Nom')).toBeVisible()
   await expect(page.getByRole('button', { name: 'Envoyer' })).toBeVisible()
+})
+
+test("le commutateur de langue bascule vers l'anglais puis revient", async ({ page }) => {
+  await page.goto('/')
+  const sw = page.locator('header .lang-switch')
+  await expect(sw).toHaveCount(1)
+  await sw.click()
+  await expect(page).toHaveURL(/\/en\/?$/)
+  await page.locator('header .lang-switch').click()
+  await expect(page).toHaveURL(/\/$/)
+})
+
+test('la navigation ne contient plus de bouton partenaire et ses liens tiennent sur une ligne (desktop)', async ({
+  page,
+  isMobile,
+}) => {
+  test.skip(isMobile, 'barre haute desktop uniquement')
+  await page.goto('/')
+  await expect(page.locator('header').getByText(/partenaire/i)).toHaveCount(0)
+  const heights = await page
+    .locator('header nav a')
+    .evaluateAll((els) => els.map((e) => e.getBoundingClientRect().height))
+  expect(Math.max(...heights)).toBeLessThan(50)
 })

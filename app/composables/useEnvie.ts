@@ -3,7 +3,7 @@ import type { Moment } from '~~/config/moments'
 
 const KEY = 'okfoods:envie'
 
-/** État partagé « envie » + « moment » choisis sur l'accueil, réutilisé sur /produits. */
+/** État partagé " envie " + " moment " choisis sur l'accueil, réutilisé sur /produits. */
 export function useEnvie() {
   const envie = useState<Envie | null>('envie', () => null)
   const moment = useState<Moment | null>('moment', () => null)

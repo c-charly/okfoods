@@ -1,9 +1,30 @@
 {
   "nom": "OK Foods Cameroun",
   "slogan": "Slogan à renseigner",
-  "social": [],
-  "whatsappRecrutement": "",
-  "emailContact": "a-renseigner@example.com",
+  "social": [
+    {
+      "name": "Facebook",
+      "url": "https://www.facebook.com/okfoodsofficiel",
+      "placeholder": false
+    },
+    {
+      "name": "x",
+      "url": "http://twitter.com/okfoodsofficiel",
+      "placeholder": false
+    },
+    {
+      "name": "youtube",
+      "url": "https://www.youtube.com/channel/UC2AKbZn0TKnRhNWPyJKIDkw/",
+      "placeholder": false
+    },
+    {
+      "name": "linkedin",
+      "url": "https://www.linkedin.com/company/ok-foods-cameroun/",
+      "placeholder": false
+    }
+  ],
+  "whatsappRecrutement": "233392670",
+  "emailContact": "contact@okfoods-cam.com",
   "legal": {
     "mentions": {
       "title": "Mentions légales",
@@ -15,9 +36,9 @@
       "title": "Politique de confidentialité",
       "paragraphs": [
         "Texte à renseigner et à faire valider.",
-        "Le générateur de badge fonctionne sur votre appareil : aucune donnée n’est envoyée ni stockée. Le formulaire de contact transmet uniquement les informations que vous saisissez."
+        "Le générateur de badge fonctionne sur votre appareil : aucune donnée n'est envoyée ni stockée. Le formulaire de contact transmet uniquement les informations que vous saisissez."
       ]
     }
   },
-  "placeholder": true
+  "placeholder": false
 }

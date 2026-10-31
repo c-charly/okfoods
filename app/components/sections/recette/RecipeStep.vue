@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { Etape } from '~/types/content'
 
-/** Une étape de la recette : chiffre géant, titre, 2–3 phrases, fait clé, icône SVG animée (ou photo `usine-0X` si elle existe). */
+/** Une étape de la recette : chiffre géant, titre, 2-3 phrases, fait clé, icône SVG animée (ou photo `usine-0X` si elle existe). */
 const props = defineProps<{ step: Etape; index: number }>()
 const { t } = useUi()
 const images = useImages()
@@ -32,7 +32,7 @@ onBeforeUnmount(() => io?.disconnect())
 <template>
   <section
     ref="root"
-    class="step relative flex min-h-svh items-center overflow-hidden px-4 py-20 md:sticky md:top-14 md:min-h-[calc(100svh-3.5rem)]"
+    class="step relative flex min-h-svh items-center overflow-hidden px-4 py-20 lg:sticky lg:top-14 lg:min-h-[calc(100svh-3.5rem)]"
     :class="themes[index % themes.length]"
     :aria-labelledby="`step-${step.n}`"
   >

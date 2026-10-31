@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/** « Réduire les animations » : accessible en permanence (pied de page + menu). Choix mémorisé. */
+/** " Réduire les animations " : accessible en permanence (pied de page + menu). Choix mémorisé. */
 defineProps<{ variant?: 'text' | 'icon' }>()
 const { userReduced, toggleReduced } = useMotion()
 const { t } = useUi()
@@ -21,7 +21,7 @@ const label = computed(() => (pressed.value ? t('motion.restore') : t('motion.re
     :title="label"
     @click="toggleReduced"
   >
-    <NavIcon name="motion" />
+    <UiIcon name="motion" />
     <span :class="variant === 'icon' ? 'sr-only' : ''">{{ label }}</span>
   </button>
 </template>

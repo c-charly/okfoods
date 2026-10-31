@@ -1,6 +1,6 @@
 {
   "slug": "bonbon-fruite",
-  "name": "Bonbon Fruité",
+  "name": "Maxi Pop",
   "range": "Confiseries",
   "envies": ["fruite", "sucre"],
   "color": "#F8EF22",
@@ -8,11 +8,11 @@
   "crumbColor": "#D3181F",
   "image": "/images/produits/bonbon-fruite.png",
   "kind": "bonbon",
-  "format": "Format à renseigner",
+  "format": "Format",
   "flavors": ["Saveur 1", "Saveur 2"],
-  "description": "Description courte à renseigner.",
+  "description": "Description.",
   "tagline": "Un éclat de fruit.",
   "moments": ["midi", "gouter"],
   "order": 3,
-  "placeholder": true
+  "placeholder": false
 }

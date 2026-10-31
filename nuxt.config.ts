@@ -10,7 +10,7 @@ export default defineNuxtConfig({
 
   modules: ['@nuxt/content', '@nuxt/image', '@nuxt/fonts', '@nuxtjs/i18n', '@nuxt/eslint'],
 
-  // Composants auto-importés par leur nom de fichier, sans préfixe de dossier (<Logo />, <HomeOpening />…)
+  // Composants auto-importés par leur nom de fichier, sans préfixe de dossier (<Logo />, <HomeOpening />...)
   components: [{ path: '~/components', pathPrefix: false }],
 
   css: ['~/assets/css/main.css'],

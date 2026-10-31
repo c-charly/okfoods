@@ -16,7 +16,7 @@ const items = computed(() => {
 
 <template>
   <nav
-    class="on-dark fixed inset-x-0 bottom-0 z-50 bg-ok-blue text-ok-white md:hidden"
+    class="on-dark fixed inset-x-0 bottom-0 z-50 bg-ok-blue text-ok-white lg:hidden"
     :aria-label="t('a11y.mobileNav')"
     style="padding-bottom: var(--safe-bottom)"
   >
@@ -28,7 +28,7 @@ const items = computed(() => {
           class="flex h-full min-w-11 flex-col items-center justify-center gap-0.5 text-[0.78rem] font-bold leading-none no-underline"
           :class="i.active ? 'text-ok-yellow' : 'text-ok-white'"
         >
-          <NavIcon :name="i.icon" />{{ i.key === 'find' ? t('nav.findShort') : i.label }}
+          <UiIcon :name="i.icon" />{{ i.key === 'find' ? t('nav.findShort') : i.label }}
         </NuxtLink>
       </li>
       <li>
@@ -39,7 +39,7 @@ const items = computed(() => {
           aria-haspopup="dialog"
           @click="open = true"
         >
-          <NavIcon name="more" />{{ t('nav.more') }}
+          <UiIcon name="more" />{{ t('nav.more') }}
         </button>
       </li>
     </ul>

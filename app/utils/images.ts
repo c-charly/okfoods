@@ -2,7 +2,7 @@ const ALT_EXT = ['jpg', 'jpeg', 'webp', 'png', 'avif']
 
 /**
  * Retrouve le fichier réellement présent pour un chemin attendu (`/images/x/croqueur-01.jpg`).
- * Tolère un autre format avec le même nom (.webp, .png…). Retourne `null` si absent → placeholder.
+ * Tolère un autre format avec le même nom (.webp, .png...). Retourne `null` si absent -> placeholder.
  */
 export function resolveImage(path: string | undefined, index: readonly string[] | Set<string>): string | null {
   if (!path) return null
@@ -27,7 +27,7 @@ export function initials(name: string): string {
   )
 }
 
-/** Ratio « 4:5 » → 0.8 (null si « libre »). */
+/** Ratio " 4:5 " -> 0.8 (null si " libre "). */
 export function ratioValue(ratio: string): number | null {
   const m = /^(\d+(?:\.\d+)?):(\d+(?:\.\d+)?)$/.exec(ratio)
   return m ? Number(m[1]) / Number(m[2]) : null

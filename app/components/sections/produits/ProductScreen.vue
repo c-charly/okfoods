@@ -30,7 +30,7 @@ function onBite(p: { level: number; x: number; y: number }) {
     class="scroll-mt-28 md:scroll-mt-32"
   >
     <div
-      class="screen relative flex min-h-svh flex-col justify-center overflow-hidden px-4 pb-28 pt-24 md:pb-16 md:pt-28"
+      class="screen relative flex min-h-svh flex-col justify-center overflow-hidden px-4 pb-28 pt-24 md:pt-28 lg:pb-16"
       :style="{ color: fg }"
     >
       <p
@@ -69,7 +69,9 @@ function onBite(p: { level: number; x: number; y: number }) {
             <dt class="opacity-90">{{ t('produits.format') }}</dt>
             <dd>{{ product.format }}</dd>
             <dt class="opacity-90">{{ t('produits.flavors') }}</dt>
-            <dd>{{ product.flavors.join(' · ') }}</dd>
+            <dd class="flex flex-wrap items-center">
+              <template v-for="(f, i) in product.flavors" :key="f"><Sep v-if="i" />{{ f }}</template>
+            </dd>
           </dl>
           <div class="mt-6 flex flex-wrap items-center gap-4">
             <Btn v-if="!done" :variant="btn" @click="art?.bite()">{{ t('produits.bite') }}</Btn>

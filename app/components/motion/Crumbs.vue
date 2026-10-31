@@ -18,7 +18,7 @@ let pending: Promise<CrumbEngine | null> | null = null
 let ro: ResizeObserver | null = null
 let io: IntersectionObserver | null = null
 
-// desktop : Matter.js (≤ 150) · mobile / appareil lent : canvas simple (≈ 20)
+// desktop : Matter.js (<= 150) - mobile / appareil lent : canvas simple (~ 20)
 const caps = () =>
   motion.value === 'full' ? { physics: true, max: 150 } : { physics: false, max: props.mode === 'pile' ? 40 : 20 }
 

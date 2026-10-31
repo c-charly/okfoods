@@ -2,9 +2,9 @@
 import type { Produit } from '~/types/content'
 
 /**
- * « Le produit se croque » : masque SVG dont les cercles rongent le contour réel de l'image
- * (ou de la silhouette de repli). 3 niveaux, puis « Remanger ». Les trois états de mouvement sont gérés :
- * complet (rebond + vibration), allégé (rebond), statique (simple passage entier → croqué).
+ * " Le produit se croque " : masque SVG dont les cercles rongent le contour réel de l'image
+ * (ou de la silhouette de repli). 3 niveaux, puis " Remanger ". Les trois états de mouvement sont gérés :
+ * complet (rebond + vibration), allégé (rebond), statique (simple passage entier -> croqué).
  */
 const props = defineProps<{ product: Produit }>()
 const emit = defineEmits<{ bite: [payload: { level: number; x: number; y: number }]; reset: [] }>()

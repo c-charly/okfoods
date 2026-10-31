@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/** 404 : « Il n'en reste que des miettes » — un biscuit déjà croqué. */
+/** 404 : " Il n'en reste que des miettes " - un biscuit déjà croqué. */
 const { t } = useUi()
 if (import.meta.server) setResponseStatus(useRequestEvent()!, 404)
 useSeo('notFound', { noindex: true })

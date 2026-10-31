@@ -2,7 +2,7 @@
 import type { Croqueur, Produit } from '~/types/content'
 
 /**
- * Mosaïque organique (formes irrégulières, coins « croqués »). Toute photo est affichée UNIQUEMENT si `consentement: true`.
+ * Mosaïque organique (formes irrégulières, coins " croqués "). Toute photo est affichée UNIQUEMENT si `consentement: true`.
  * Un tap ouvre une visionneuse <dialog> (swipe natif en scroll-snap, flèches clavier, Échap).
  */
 const props = defineProps<{ items: Croqueur[]; products: Produit[] }>()
@@ -13,7 +13,8 @@ const blobs = ['blob-a', 'blob-b', 'blob-c', 'blob-d']
 const spans = ['row-span-2', '', 'md:col-span-2 md:row-span-2', 'row-span-2', '', '', 'md:row-span-2', '']
 const tints = ['var(--ok-blue)', 'var(--ok-red-deep)', 'var(--ok-blue-soft)', 'var(--ok-blue-deep)']
 const productOf = (c: Croqueur) => props.products.find((p) => p.slug === c.produit)
-const caption = (c: Croqueur) => [c.prenom, productOf(c)?.name, t(`moments.${c.moment}`)].filter(Boolean).join(' · ')
+const captionParts = (c: Croqueur) =>
+  [c.prenom, productOf(c)?.name, t(`moments.${c.moment}`)].filter(Boolean) as string[]
 
 const dlg = ref<HTMLDialogElement>()
 const track = ref<HTMLElement>()
@@ -120,7 +121,9 @@ onBeforeUnmount(() => ctx?.revert())
               class="!aspect-auto h-full w-full transition-transform duration-500 group-hover:scale-105"
             />
           </button>
-          <p class="mt-2 text-sm font-bold leading-tight">{{ caption(c) }}</p>
+          <p class="mt-2 text-sm font-bold leading-tight">
+            <template v-for="(part, k) in captionParts(c)" :key="k"><Sep v-if="k" />{{ part }}</template>
+          </p>
         </li>
       </ul>
     </div>
@@ -141,7 +144,7 @@ onBeforeUnmount(() => ctx?.revert())
             :aria-label="t('a11y.close')"
             @click="dlg?.close()"
           >
-            <NavIcon name="close" />
+            <UiIcon name="close" />
           </button>
         </div>
         <ul
@@ -170,17 +173,20 @@ onBeforeUnmount(() => ctx?.revert())
               />
             </div>
             <div class="md:max-w-md">
-              <p class="font-display text-[clamp(1.8rem,5vw,3.4rem)] leading-[1.02]">« {{ c.phrase }} »</p>
-              <p class="mt-3 text-lg font-bold">
-                {{ c.prenom }} · {{ c.ville }} <PlaceholderBadge :show="c.placeholder" />
+              <p class="font-display text-[clamp(1.8rem,5vw,3.4rem)] leading-[1.02]">
+                <UiIcon name="quote" size="mr-[0.15em] inline-block h-[0.65em] w-[0.65em]" />{{ c.phrase
+                }}<UiIcon name="quote" size="ml-[0.15em] inline-block h-[0.65em] w-[0.65em] rotate-180" />
               </p>
-              <p class="text-lg">{{ productOf(c)?.name }} · {{ t(`moments.${c.moment}`) }}</p>
+              <p class="mt-3 text-lg font-bold">
+                {{ c.prenom }}<Sep />{{ c.ville }} <PlaceholderBadge :show="c.placeholder" />
+              </p>
+              <p class="text-lg">{{ productOf(c)?.name }}<Sep />{{ t(`moments.${c.moment}`) }}</p>
             </div>
           </li>
         </ul>
         <div class="flex justify-center gap-3 pb-6">
-          <Btn variant="yellow" :aria-label="t('a11y.prev')" @click="go(-1)">←</Btn>
-          <Btn variant="yellow" :aria-label="t('a11y.next')" @click="go(1)">→</Btn>
+          <Btn variant="yellow" :aria-label="t('a11y.prev')" @click="go(-1)"><UiIcon name="arrow-left" /></Btn>
+          <Btn variant="yellow" :aria-label="t('a11y.next')" @click="go(1)"><UiIcon name="arrow-right" /></Btn>
         </div>
       </div>
     </dialog>

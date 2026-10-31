@@ -1,6 +1,6 @@
 {
   "slug": "gaufrette",
-  "name": "Gaufrette",
+  "name": "Rio All Sports",
   "range": "Biscuits",
   "envies": ["croquant", "fondant"],
   "color": "#B8121A",
@@ -8,11 +8,11 @@
   "crumbColor": "#E6B766",
   "image": "/images/produits/gaufrette.png",
   "kind": "biscuit",
-  "format": "Format à renseigner",
+  "format": "Format",
   "flavors": ["Saveur 1", "Saveur 2"],
-  "description": "Description courte à renseigner.",
+  "description": "Description courte.",
   "tagline": "Croustillante dehors.",
   "moments": ["midi", "matin"],
   "order": 5,
-  "placeholder": true
+  "placeholder": false
 }

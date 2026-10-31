@@ -48,7 +48,7 @@ useJsonLd(() => {
           <h1 class="giant mt-1 text-[clamp(3.6rem,14vw,12rem)]">{{ t('team.title') }}</h1>
           <p class="mt-5 max-w-[34ch] text-[1.25rem] font-bold">{{ t('team.hook') }}</p>
           <div class="mt-6">
-            <Btn href="#postes" variant="yellow">{{ t('team.jobs') }} ↓</Btn>
+            <Btn href="#postes" variant="yellow">{{ t('team.jobs') }} <UiIcon name="arrow-down" size="h-5 w-5" /></Btn>
           </div>
         </div>
         <div class="relative mx-auto w-[min(72vw,22rem)] md:w-full" aria-hidden="true">

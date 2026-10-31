@@ -2,8 +2,9 @@
 import type { Avis } from '~/types/content'
 
 /**
- * « Je mange OK Foods quand… » : les réponses défilent comme sur un tableau de gare.
- * Pause possible (WCAG 2.2.2). Reduced-motion : liste statique. La liste complète est toujours disponible en texte.
+ * "Je mange OK Foods quand..." : les reponses defilent verticalement, comme sur un tableau de gare.
+ * La reponse suivante monte depuis le bas et pousse la precedente vers le haut (sortie par le haut).
+ * Pause possible (WCAG 2.2.2). Animations reduites : pas de mouvement. La liste complete reste disponible en texte.
  */
 const props = defineProps<{ avis: Avis[] }>()
 const { t } = useUi()
@@ -17,16 +18,19 @@ let timer: ReturnType<typeof setInterval> | null = null
 let io: IntersectionObserver | null = null
 
 const current = computed(() => props.avis[idx.value % Math.max(props.avis.length, 1)])
-const letters = computed(() => Array.from(current.value?.completion ?? ''))
-const flip = computed(() => letters.value.length <= 38)
+// La plus longue reponse sert de gabarit invisible : la hauteur du tableau ne change jamais pendant le defilement
+const longest = computed(() =>
+  props.avis.reduce((a, b) => (b.completion.length > (a?.completion.length ?? 0) ? b : a), props.avis[0]),
+)
 
 function sync() {
   if (timer) clearInterval(timer)
   timer = null
-  if (playing.value && visible.value && mode.value !== 'static' && props.avis.length > 1)
+  if (playing.value && visible.value && mode.value !== 'static' && props.avis.length > 1) {
     timer = setInterval(() => {
       idx.value = (idx.value + 1) % props.avis.length
     }, 3400)
+  }
 }
 watch([playing, visible, mode], sync)
 onMounted(() => {
@@ -52,28 +56,26 @@ onBeforeUnmount(() => {
       </h1>
       <p class="giant mt-6 text-[clamp(2.8rem,10.5vw,9.5rem)] !leading-[0.88]">{{ t('parole.a.lead') }}</p>
 
-      <div class="board mt-8 min-h-[7rem] bg-ok-blue-deep p-5 md:min-h-[9rem] md:p-8" aria-live="off">
-        <p
-          v-if="current"
-          :key="idx"
-          class="font-display text-[clamp(1.8rem,6vw,4.6rem)] leading-[1] text-ok-yellow"
-          :class="{ 'ticker-flip': flip }"
-        >
-          <template v-if="flip"
-            ><span
-              v-for="(c, i) in letters"
-              :key="i"
-              class="ticker-letter"
-              :style="{ animationDelay: `${i * 24}ms` }"
-              >{{ c === ' ' ? '\u00A0' : c }}</span
-            ></template
-          >
-          <template v-else>{{ current.completion }}</template>
-        </p>
-        <p v-if="current" class="mt-3 text-lg font-bold">
-          {{ t('parole.a.by') }} {{ current.prenom }}, {{ current.ville }}
-          <PlaceholderBadge :show="current.placeholder" />
-        </p>
+      <div class="mt-8 bg-ok-blue-deep p-5 md:p-8" aria-live="off">
+        <div class="ticker-window relative overflow-hidden">
+          <!-- Gabarit invisible : reserve la hauteur de la plus longue reponse -->
+          <div v-if="longest" class="invisible" aria-hidden="true">
+            <p class="font-display text-[clamp(1.8rem,6vw,4.6rem)] leading-[1]">{{ longest.completion }}</p>
+            <p class="mt-3 text-lg font-bold">{{ t('parole.a.by') }} {{ longest.prenom }}, {{ longest.ville }}</p>
+          </div>
+          <!-- La nouvelle reponse monte du bas, l'ancienne repart vers le haut, en meme temps -->
+          <Transition name="ticker">
+            <div v-if="current" :key="idx" class="ticker-slide absolute inset-x-0 top-0">
+              <p class="font-display text-[clamp(1.8rem,6vw,4.6rem)] leading-[1] text-ok-yellow">
+                {{ current.completion }}
+              </p>
+              <p class="mt-3 text-lg font-bold">
+                {{ t('parole.a.by') }} {{ current.prenom }}, {{ current.ville }}
+                <PlaceholderBadge :show="current.placeholder" />
+              </p>
+            </div>
+          </Transition>
+        </div>
       </div>
 
       <div class="mt-5 flex flex-wrap items-center gap-3">
@@ -93,7 +95,7 @@ onBeforeUnmount(() => {
       >
         <li v-for="(a, i) in avis" :key="i" class="border-b border-ok-white/40 py-3">
           <span class="font-bold">{{ a.completion }}</span>
-          <span class="opacity-90">— {{ a.prenom }}, {{ a.ville }}</span>
+          <span class="opacity-90">- {{ a.prenom }}, {{ a.ville }}</span>
         </li>
       </ul>
     </div>
@@ -101,15 +103,26 @@ onBeforeUnmount(() => {
 </template>
 
 <style>
-.ticker-letter {
-  display: inline-block;
-  animation: ok-flap-in 0.42s var(--ease-out) both;
-  transform-origin: 50% 100%;
+/* Styles non scopes : les selecteurs html[data-motion] ne survivent pas a `scoped` + `:global()` */
+.ticker-enter-active,
+.ticker-leave-active {
+  transition:
+    transform 0.65s var(--ease-out),
+    opacity 0.65s ease;
 }
-.ticker-flip {
-  perspective: 700px;
+.ticker-enter-from {
+  transform: translateY(105%);
+  opacity: 0;
 }
-html[data-motion='lite'] .ticker-letter {
-  animation: none;
+.ticker-leave-to {
+  transform: translateY(-105%);
+  opacity: 0;
+}
+html[data-motion='lite'] .ticker-enter-active,
+html[data-motion='lite'] .ticker-leave-active {
+  transition-duration: 0.4s;
+}
+html[data-motion='static'] .ticker-pause {
+  display: none;
 }
 </style>

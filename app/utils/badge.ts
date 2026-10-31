@@ -1,10 +1,10 @@
-/** Badge candidat : dessin canvas 1080×1350 (4:5), entièrement côté appareil. */
+/** Badge candidat : dessin canvas 1080x1350 (4:5), entièrement côté appareil. */
 export const BADGE_W = 1080
 export const BADGE_H = 1350
 
 export type Measure = (text: string) => number
 
-/** Découpe un texte en lignes qui tiennent dans `maxW` (retourne au plus `maxLines`, dernière ligne tronquée par « … »). */
+/** Découpe un texte en lignes qui tiennent dans `maxW` (retourne au plus `maxLines`, dernière ligne tronquée par " ... "). */
 export function wrapLines(measure: Measure, text: string, maxW: number, maxLines = 2): string[] {
   const words = text.trim().split(/\s+/).filter(Boolean)
   const lines: string[] = []
@@ -20,13 +20,13 @@ export function wrapLines(measure: Measure, text: string, maxW: number, maxLines
   if (cur) lines.push(cur)
   if (lines.length > maxLines) {
     const kept = lines.slice(0, maxLines)
-    kept[maxLines - 1] = `${kept[maxLines - 1]!.replace(/\s+\S*$/, '')}…`
+    kept[maxLines - 1] = `${kept[maxLines - 1]!.replace(/\s+\S*$/, '')}...`
     return kept
   }
   return lines
 }
 
-/** Plus grande taille de police ≤ `start` (par pas de 4) pour laquelle le texte tient dans `maxW`. */
+/** Plus grande taille de police <= `start` (par pas de 4) pour laquelle le texte tient dans `maxW`. */
 export function fitSize(
   measureAt: (size: number, text: string) => number,
   text: string,
@@ -72,7 +72,7 @@ export async function drawBadge(
 
   ctx.fillStyle = theme.blue
   ctx.fillRect(0, 0, BADGE_W, BADGE_H)
-  // « Morsures » décoratives
+  // " Morsures " décoratives
   const dot = (x: number, y: number, r: number, c: string) => {
     ctx.fillStyle = c
     ctx.beginPath()
@@ -97,7 +97,7 @@ export async function drawBadge(
   }
 
   // Prénom (taille ajustée à la largeur)
-  const prenom = (input.prenom.trim() || '…').toUpperCase()
+  const prenom = (input.prenom.trim() || '...').toUpperCase()
   const size = fitSize(
     (s, t) => {
       ctx.font = `${s}px ${theme.display}`
@@ -116,16 +116,16 @@ export async function drawBadge(
   // Poste (2 lignes max)
   ctx.font = `700 60px ${theme.sans}`
   ctx.fillStyle = theme.yellow
-  const jobLines = wrapLines((t) => ctx.measureText(t).width, input.poste.trim() || '—', maxW, 2)
+  const jobLines = wrapLines((t) => ctx.measureText(t).width, input.poste.trim() || '-', maxW, 2)
   jobLines.forEach((l, i) => ctx.fillText(l, pad, 680 + i * 74))
 
-  // Ville · quartier
+  // Ville - quartier
   ctx.font = `600 50px ${theme.sans}`
   ctx.fillStyle = theme.cream
-  const where = [input.ville.trim(), input.quartier.trim()].filter(Boolean).join(' · ')
+  const where = [input.ville.trim(), input.quartier.trim()].filter(Boolean).join(', ')
   if (where) ctx.fillText(where, pad, 680 + jobLines.length * 74 + 40)
 
-  // Pastille « CANDIDAT »
+  // Pastille " CANDIDAT "
   const bw = 640
   const bh = 150
   const bx = (BADGE_W - bw) / 2

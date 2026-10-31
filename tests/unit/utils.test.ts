@@ -9,7 +9,7 @@ import { fitSize, wrapLines } from '~/utils/badge'
 import { createRateLimiter, validateContact } from '../../shared/utils/contact'
 
 describe('bite', () => {
-  it('trouve le contour réel d’une image (disque opaque 20×20)', () => {
+  it("trouve le contour reel d'une image (disque opaque 20x20)", () => {
     const w = 20
     const rgba = new Uint8ClampedArray(w * w * 4)
     for (let y = 0; y < w; y++)
@@ -71,7 +71,7 @@ describe('dates', () => {
   })
 })
 
-describe('merge (repli EN → FR)', () => {
+describe('merge (repli EN -> FR)', () => {
   it('fusionne en profondeur et garde le FR si la clé EN manque', () => {
     expect(deepMerge({ a: { b: 1, c: 2 }, d: 'fr' }, { a: { b: 9 } })).toEqual({ a: { b: 9, c: 2 }, d: 'fr' })
   })
@@ -132,7 +132,7 @@ describe('contact', () => {
 describe('badge', () => {
   const measure = (t: string) => t.length * 10
   it('découpe le poste en 2 lignes max', () => {
-    expect(wrapLines(measure, 'Vendeur ambulant de quartier', 150, 2)).toEqual(['Vendeur', 'ambulant…'])
+    expect(wrapLines(measure, 'Vendeur ambulant de quartier', 150, 2)).toEqual(['Vendeur', 'ambulant...'])
     expect(wrapLines(measure, 'Court', 150)).toEqual(['Court'])
     expect(wrapLines(measure, 'un deux trois quatre cinq six sept', 80, 2)).toHaveLength(2)
   })

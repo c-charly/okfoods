@@ -3,7 +3,7 @@ import type { Hole } from '~/utils/bite'
 export type ProductKind = 'biscuit' | 'sachet' | 'bonbon'
 
 /**
- * Logique de la morsure : 3 niveaux, puis « Remanger » réinitialise.
+ * Logique de la morsure : 3 niveaux, puis " Remanger " réinitialise.
  * Les positions sont calculées depuis le contour RÉEL de l'image (échantillonnage canvas des pixels
  * non transparents) ; sans image, depuis le contour de la silhouette de repli.
  */

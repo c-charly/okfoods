@@ -1,7 +1,7 @@
 {
   "a11y": {
     "skip": "Aller au contenu principal",
-    "home": "OK Foods, retour à l’accueil",
+    "home": "OK Foods, retour à l'accueil",
     "mainNav": "Navigation principale",
     "mobileNav": "Navigation mobile",
     "closeMenu": "Fermer le menu",
@@ -17,13 +17,12 @@
   "nav": {
     "home": "Accueil",
     "products": "Produits",
-    "recipe": "Recette",
+    "recipe": "Histoire",
     "find": "Nous trouver",
     "more": "Plus",
     "team": "Team bleue",
     "words": "Ils en parlent",
     "contact": "Contact",
-    "partner": "Devenir partenaire",
     "moreTitle": "Plus de pages",
     "findShort": "Trouver"
   },
@@ -37,10 +36,11 @@
   "lang": {
     "label": "Langue",
     "fr": "Français",
-    "en": "English"
+    "en": "English",
+    "switch": "Changer de langue"
   },
   "placeholder": {
-    "badge": "Contenu d’exemple",
+    "badge": "Contenu d'exemple",
     "file": "Fichier attendu"
   },
   "footer": {
@@ -50,7 +50,8 @@
     "links": "Liens utiles",
     "legal": "Mentions légales",
     "privacy": "Confidentialité",
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "follow": "Suivez-nous"
   },
   "seo": {
     "home": {
@@ -66,7 +67,7 @@
       "description": "Des ingrédients à ta main : comment un produit OK Foods est fabriqué et livré."
     },
     "find": {
-      "title": "Nous trouver : Douala – Bonabéri",
+      "title": "Nous trouver : Douala - Bonabéri",
       "description": "Où trouver OK Foods à Douala et Bonabéri : adresse, horaires et itinéraire."
     },
     "team": {
@@ -112,11 +113,11 @@
       "title": "OK Foods",
       "line": "Ça croque, ça fond, ça se partage.",
       "tear": "Déchirer le sachet",
-      "skip": "Passer l’ouverture",
+      "skip": "Passer l'ouverture",
       "scroll": "Fais défiler"
     },
     "envie": {
-      "title": "T’as envie de quoi ?",
+      "title": "T'as envie de quoi ?",
       "hint": "Touche une bulle, on te montre ce qui va avec.",
       "pick": "Pour ton envie de {envie}",
       "none": "Choisis une envie pour voir les produits qui vont avec.",
@@ -124,12 +125,12 @@
       "reset": "Choisir autre chose"
     },
     "moment": {
-      "title": "L’heure de la pause",
-      "hint": "C’est quand, ta pause ?",
+      "title": "L'heure de la pause",
+      "hint": "C'est quand, ta pause ?",
       "phrases": {
         "matin": "Le jour se lève, la pause aussi.",
         "midi": "Midi pile : on se pose cinq minutes.",
-        "gouter": "L’heure du goûter, c’est sacré.",
+        "gouter": "L'heure du goûter, c'est sacré.",
         "soir": "Le calme du soir, un petit croc."
       },
       "suggest": "On te suggère",
@@ -160,13 +161,13 @@
     "flavors": "Saveurs",
     "jump": "Aller au produit",
     "level": "Bouchée {n} sur 3",
-    "first": "Pour toi d’abord",
+    "first": "Pour toi d'abord",
     "end": "Tu veux le distribuer ?"
   },
   "recette": {
     "kicker": "La recette",
     "title": "Notre histoire en recette",
-    "intro": "Comment un produit arrive dans ta main, étape par étape.",
+    "intro": "Mot du DG : C’est avec une fierté immense que je m’adresse à vous à travers ce site internet.",
     "step": "Étape",
     "key": "À retenir",
     "reperes": "Repères"
@@ -222,23 +223,23 @@
       "district": "Quartier",
       "job": "Poste",
       "pickJob": "Choisis un poste",
-      "download": "Télécharger l’image",
+      "download": "Télécharger l'image",
       "whatsapp": "Postuler sur WhatsApp",
       "candidate": "CANDIDAT",
-      "note": "Ton badge est créé sur ton téléphone. Rien n’est envoyé, rien n’est stocké.",
-      "missingNumber": "Numéro WhatsApp à renseigner : le message s’ouvre sans destinataire.",
+      "note": "Ton badge est créé sur ton téléphone. Rien n'est envoyé, rien n'est stocké.",
+      "missingNumber": "Numéro WhatsApp à renseigner : le message s'ouvre sans destinataire.",
       "message": "Bonjour, je suis {prenom}, je candidate au poste de {poste} à {ville}, quartier {quartier}. Voici mon CV.",
-      "error": "L’aperçu du badge n’est pas disponible, mais tu peux quand même postuler.",
+      "error": "L'aperçu du badge n'est pas disponible, mais tu peux quand même postuler.",
       "preview": "Aperçu du badge",
       "fillIn": "Remplis le formulaire pour voir ton badge."
     },
-    "scam": "Ne donnez jamais d’argent pour obtenir un emploi chez OK Foods."
+    "scam": "Ne donnez jamais d'argent pour obtenir un emploi chez OK Foods."
   },
   "parole": {
     "kicker": "Ils en parlent",
     "title": "Ils en parlent",
     "a": {
-      "lead": "Je mange OK Foods quand…",
+      "lead": "Je mange OK Foods quand...",
       "all": "Voir toutes les réponses",
       "hide": "Masquer les réponses",
       "by": "par",
@@ -260,7 +261,7 @@
     "kicker": "Parlons-nous",
     "title": "On discute ?",
     "intro": "Distributeur, partenaire, presse ou simple curiosité : choisis ton profil.",
-    "noOrder": "Il n’y a pas de commande en ligne : ici, on parle partenariat.",
+    "noOrder": "Il n'y a pas de commande en ligne : ici, on parle partenariat.",
     "chat": {
       "you": "Toi",
       "bot": "OK Foods",
@@ -270,9 +271,9 @@
       "useForm": "Envoyer via le formulaire",
       "candidate": "Pour postuler, direction la page Team bleue.",
       "goTeam": "Aller à la Team bleue",
-      "placeholder": "Écris ici…",
+      "placeholder": "Écris ici...",
       "send": "Envoyer",
-      "who": "Tu es plutôt…"
+      "who": "Tu es plutôt..."
     },
     "form": {
       "prefer": "Préférer un formulaire",
@@ -282,17 +283,17 @@
       "phone": "Téléphone",
       "message": "Message",
       "send": "Envoyer",
-      "sending": "Envoi…",
+      "sending": "Envoi...",
       "success": "Merci ! Ton message est bien parti.",
       "demo": "Mode démonstration : message enregistré dans les journaux, aucun e-mail envoyé.",
-      "error": "L’envoi a échoué. Réessaie ou écris-nous par e-mail.",
+      "error": "L'envoi a échoué. Réessaie ou écris-nous par e-mail.",
       "required": "Champ requis",
       "rate": "Trop de messages envoyés. Réessaie un peu plus tard."
     }
   },
   "notFound": {
-    "title": "Il n’en reste que des miettes",
-    "text": "Cette page a été croquée. Retourne à l’accueil.",
-    "home": "Retour à l’accueil"
+    "title": "Il n'en reste que des miettes",
+    "text": "Cette page a été croquée. Retourne à l'accueil.",
+    "home": "Retour à l'accueil"
   }
 }

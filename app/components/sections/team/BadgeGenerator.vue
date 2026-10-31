@@ -128,7 +128,7 @@ function download() {
         <label class="field-label" for="b-poste">{{ t('team.badge.job') }}</label>
         <select v-if="openJobs.length" id="b-poste" v-model="form.poste" class="field" required>
           <option value="" disabled>{{ t('team.badge.pickJob') }}</option>
-          <option v-for="p in openJobs" :key="p.id" :value="p.intitule">{{ p.intitule }} — {{ p.ville }}</option>
+          <option v-for="p in openJobs" :key="p.id" :value="p.intitule">{{ p.intitule }} - {{ p.ville }}</option>
         </select>
         <input
           v-else
@@ -171,7 +171,9 @@ function download() {
         <Btn :href="waLink" external variant="red" :disabled="!valid">{{ t('team.badge.whatsapp') }}</Btn>
         <Btn v-if="!failed" variant="blue" :disabled="!valid" @click="download">{{ t('team.badge.download') }}</Btn>
       </div>
-      <p v-if="noNumber" class="text-sm font-bold">⚠ {{ t('team.badge.missingNumber') }}</p>
+      <p v-if="noNumber" class="flex items-start gap-2 text-sm font-bold">
+        <UiIcon name="warning" size="h-5 w-5 shrink-0" />{{ t('team.badge.missingNumber') }}
+      </p>
       <p class="text-sm">{{ t('team.badge.note') }}</p>
       <p v-if="failed" class="rounded-xl bg-ok-yellow p-3 font-bold text-ok-blue" role="status">
         {{ t('team.badge.error') }}

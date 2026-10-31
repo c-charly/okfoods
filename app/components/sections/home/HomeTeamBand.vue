@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/** Accueil 6/6 — bandeau pleine largeur « Team bleue » : mots qui glissent, badge qui s'incline. */
+/** Accueil 6/6 - bandeau pleine largeur " Team bleue " : mots qui glissent, badge qui s'incline. */
 const { t, raw } = useUi()
 </script>
 
@@ -17,7 +17,9 @@ const { t, raw } = useUi()
         <h2 id="team-band" class="sr-only">{{ t('nav.team') }}</h2>
         <p class="sub text-[clamp(1.4rem,3vw,2.2rem)]">{{ t('home.team.line') }}</p>
         <div class="mt-5">
-          <Btn to="/team-bleue" variant="blue">{{ t('home.team.more') }} →</Btn>
+          <Btn to="/team-bleue" variant="blue"
+            >{{ t('home.team.more') }} <UiIcon name="arrow-right" size="h-5 w-5"
+          /></Btn>
         </div>
       </div>
     </div>

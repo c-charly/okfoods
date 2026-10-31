@@ -1,11 +1,11 @@
 {
-  "intro": "Salut ! Dis-nous qui tu es, on s’occupe du reste.",
+  "intro": "Salut ! Dis-nous qui tu es, on s'occupe du reste.",
   "outro": "Merci ! Voici le récapitulatif de ta demande.",
   "profils": [
     {
       "id": "particulier",
       "label": "Particulier",
-      "subject": "Message d’un particulier",
+      "subject": "Message d'un particulier",
       "steps": [
         {
           "id": "sujet",
@@ -32,7 +32,7 @@
         },
         {
           "id": "activite",
-          "question": "Tu fais quoi aujourd’hui ?",
+          "question": "Tu fais quoi aujourd'hui ?",
           "type": "choice",
           "options": ["Grossiste", "Détaillant", "Je démarre", "Autre"]
         },

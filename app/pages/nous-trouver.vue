@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/** « La Tournée » : périmètre limité à Douala et Bonabéri. Pas de carte nationale, pas de « Trouve ton vendeur ». */
+/** " La Tournée " : périmètre limité à Douala et Bonabéri. Pas de carte nationale, pas de " Trouve ton vendeur ". */
 const { t } = useUi()
 const lieu = useLieu()
 const showMap = ref(false)
@@ -8,7 +8,7 @@ const telHref = computed(() =>
 )
 useSeo('find')
 
-// LocalBusiness : les champs encore « à renseigner » ne sont pas publiés comme des faits.
+// LocalBusiness : les champs encore " à renseigner " ne sont pas publiés comme des faits.
 useJsonLd(() => {
   const l = lieu.value
   if (!l) return null
@@ -61,7 +61,9 @@ useJsonLd(() => {
                 <dd>{{ lieu.horaires }}</dd>
               </dl>
               <div class="mt-5 flex flex-wrap gap-3">
-                <Btn :href="lieu.mapsUrl" external variant="yellow">{{ t('trouver.route') }} ↗</Btn>
+                <Btn :href="lieu.mapsUrl" external variant="yellow"
+                  >{{ t('trouver.route') }} <UiIcon name="external" size="h-5 w-5"
+                /></Btn>
                 <Btn v-if="lieu.mapsEmbedUrl" variant="ghost" :aria-expanded="showMap" @click="showMap = !showMap">{{
                   showMap ? t('trouver.mapHide') : t('trouver.map')
                 }}</Btn>
@@ -99,7 +101,7 @@ useJsonLd(() => {
     overflow: hidden;
   }
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .tour-stick {
     min-height: calc(100svh - 3.5rem - var(--bottom-nav-h));
   }

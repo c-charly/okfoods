@@ -1,4 +1,4 @@
-/** Sitemap généré depuis la liste des pages × langues, avec hreflang. */
+/** Sitemap généré depuis la liste des pages x langues, avec hreflang. */
 const PAGES = [
   '',
   '/produits',

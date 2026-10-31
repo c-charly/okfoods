@@ -1,5 +1,5 @@
 <script setup lang="ts">
-/** Polo « team bleue » dessiné en SVG (décoratif). */
+/** Polo " team bleue " dessiné en SVG (décoratif). */
 </script>
 
 <template>
