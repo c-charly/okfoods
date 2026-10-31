@@ -1,0 +1,18 @@
+{
+  "slug": "choco-loco",
+  "name": "Choco Loco",
+  "range": "Choco Loco",
+  "envies": ["sucre"],
+  "color": "#D3181F",
+  "accentColor": "#F8EF22",
+  "crumbColor": "#FFF8E6",
+  "image": "/images/produits/choco-loco.png",
+  "kind": "tartine",
+  "format": "Format",
+  "flavors": ["Flavour 1", "Flavour 2"],
+  "description": "Description.",
+  "tagline": "All smooth and sweet.",
+  "moments": ["matin", "soir"],
+  "order": 2,
+  "placeholder": false
+}

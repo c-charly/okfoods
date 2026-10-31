@@ -1,18 +1,18 @@
 {
   "slug": "lait-sucre",
-  "name": "Lait Sucré",
+  "name": "Top-Milk",
   "range": "Sweetened milk",
-  "envies": ["fondant", "sucre"],
+  "envies": ["sucre"],
   "color": "#D3181F",
   "accentColor": "#F8EF22",
   "crumbColor": "#FFF8E6",
   "image": "/images/produits/lait-sucre.png",
   "kind": "sachet",
-  "format": "Format to be provided",
-  "flavors": ["Flavour 1", "Flavour 2"],
-  "description": "Short description to be provided.",
+  "format": "15g, 19g, 370g",
+  "flavors": ["Vanilla", "Chocolate", "Strawberry"],
+  "description": "Top-Milk whole milk powder is a nourishing addition to your family's daily diet, providing calcium, protein and vitamins. These nutrients support your children's healthy growth.",
   "tagline": "All smooth and sweet.",
   "moments": ["matin", "soir"],
   "order": 2,
-  "placeholder": true
+  "placeholder": false
 }

@@ -1,75 +1,75 @@
 {
-  "intro": "Introduction text to be provided.",
+  "intro": "",
   "steps": [
     {
       "n": 1,
-      "titre": "Ingredients",
+      "titre": "Our beginnings",
       "icone": "ingredients",
-      "texte": "Text to be provided: two to three sentences about this step.",
-      "chiffre": "Key figure to be provided",
-      "placeholder": true
+      "texte": "OK FOODS CAMEROUN is a food-processing company that makes biscuits, dairy products, sweets, wafers, chewing gum and chocolate spreads.",
+      "chiffre": "1998",
+      "placeholder": false
     },
     {
       "n": 2,
-      "titre": "Mix",
+      "titre": "Biscuits",
       "icone": "bol",
-      "texte": "Text to be provided: two to three sentences about this step.",
-      "chiffre": "Key figure to be provided",
-      "placeholder": true
+      "texte": "From a grain of wheat to thousands of biscuits sold to date, our journey into the food industry officially began here.",
+      "chiffre": "2000",
+      "placeholder": false
     },
     {
       "n": 3,
-      "titre": "Bake",
+      "titre": "Dairy products",
       "icone": "four",
-      "texte": "Text to be provided: two to three sentences about this step.",
-      "chiffre": "Key figure to be provided",
-      "placeholder": true
+      "texte": "In response to market demand, we decided to diversify our product range.",
+      "chiffre": "2004",
+      "placeholder": false
     },
     {
       "n": 4,
       "titre": "Pack",
       "icone": "sachet",
-      "texte": "Text to be provided: two to three sentences about this step.",
-      "chiffre": "Key figure to be provided",
-      "placeholder": true
+      "texte": "We introduced a new product range. Today, we are the only local wafer manufacturer.",
+      "chiffre": "2007",
+      "placeholder": false
     },
     {
       "n": 5,
-      "titre": "Deliver",
+      "titre": "MAXI confectionery",
       "icone": "tricycle",
-      "texte": "Text to be provided: two to three sentences about this step.",
-      "chiffre": "Key figure to be provided",
-      "placeholder": true
+      "texte": "As a major player in the food industry, we decided to offer the market high-quality confectionery at affordable prices.",
+      "chiffre": "2013",
+      "placeholder": false
     },
     {
       "n": 6,
-      "titre": "Serve",
+      "titre": "CHOCO LOCO",
       "icone": "servir",
-      "texte": "Text to be provided: two to three sentences about this step.",
-      "chiffre": "Key figure to be provided",
-      "placeholder": true
+      "texte": "Our chocolate spread is rich and creamy, with a taste like no other.",
+      "chiffre": "2021",
+      "placeholder": false
     }
   ],
   "reperes": [
     {
-      "valeur": "XXXX",
-      "label": "Date or figure to be provided",
-      "placeholder": true
+      "valeur": "22000",
+      "label": "ISO 22000 & 9001 certifications",
+      "placeholder": false
     },
     {
-      "valeur": "XX",
-      "label": "Date or figure to be provided",
-      "placeholder": true
+      "valeur": "9001",
+      "label": "ISO 9001 certification",
+      "placeholder": false
     },
     {
-      "valeur": "XXX",
-      "label": "Date or figure to be provided",
-      "placeholder": true
+      "valeur": "5+",
+      "label": "Brands",
+      "placeholder": false
     },
     {
-      "valeur": "XXXX",
-      "label": "Date or figure to be provided",
-      "placeholder": true
+      "valeur": "1998",
+      "label": "Founded",
+      "placeholder": false
     }
   ]
 }

@@ -1,42 +1,42 @@
 {
   "nom": "OK Foods Cameroun",
-  "slogan": "Tagline to be provided",
+  "slogan": "Slogan to be provided",
   "social": [
     {
       "name": "Facebook",
-      "url": "https://www.facebook.com/",
-      "placeholder": true
+      "url": "https://www.facebook.com/okfoodsofficiel",
+      "placeholder": false
     },
     {
-      "name": "Instagram",
-      "url": "https://www.instagram.com/",
-      "placeholder": true
+      "name": "X",
+      "url": "http://twitter.com/okfoodsofficiel",
+      "placeholder": false
     },
     {
-      "name": "TikTok",
-      "url": "https://www.tiktok.com/",
-      "placeholder": true
+      "name": "YouTube",
+      "url": "https://www.youtube.com/channel/UC2AKbZn0TKnRhNWPyJKIDkw/",
+      "placeholder": false
     },
     {
-      "name": "WhatsApp",
-      "url": "https://wa.me/",
-      "placeholder": true
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/company/ok-foods-cameroun/",
+      "placeholder": false
     }
   ],
-  "whatsappRecrutement": "",
-  "emailContact": "a-renseigner@example.com",
+  "whatsappRecrutement": "233392670",
+  "emailContact": "contact@okfoods-cam.com",
   "legal": {
     "mentions": {
       "title": "Legal notice",
-      "paragraphs": ["Legal notice text to be provided: publisher, publication director, host, contact."]
+      "paragraphs": ["Legal notice to be completed: publisher, publication director, hosting provider and contact details."]
     },
     "confidentialite": {
       "title": "Privacy policy",
       "paragraphs": [
-        "Text to be provided and validated.",
+        "Text to be completed and approved.",
         "The badge generator runs on your device: no data is sent or stored. The contact form only transmits what you type."
       ]
     }
   },
-  "placeholder": true
+  "placeholder": false
 }

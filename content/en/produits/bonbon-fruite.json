@@ -1,6 +1,6 @@
 {
   "slug": "bonbon-fruite",
-  "name": "Bonbon Fruité",
+  "name": "Maxi Pop",
   "range": "Confectionery",
   "envies": ["fruite", "sucre"],
   "color": "#F8EF22",
@@ -8,11 +8,11 @@
   "crumbColor": "#D3181F",
   "image": "/images/produits/bonbon-fruite.png",
   "kind": "bonbon",
-  "format": "Format to be provided",
+  "format": "Format",
   "flavors": ["Flavour 1", "Flavour 2"],
-  "description": "Short description to be provided.",
+  "description": "Description.",
   "tagline": "A burst of fruit.",
   "moments": ["midi", "gouter"],
   "order": 3,
-  "placeholder": true
+  "placeholder": false
 }

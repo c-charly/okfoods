@@ -4,26 +4,26 @@
     "ville": "Douala",
     "dateLimite": "2027-06-30",
     "actif": true,
-    "placeholder": true,
-    "intitule": "Job title to be provided (example 1)",
-    "profil": "Required profile to be provided"
+    "placeholder": false,
+    "intitule": "Production operator",
+    "profil": "A meticulous person who follows hygiene rules and is comfortable working as part of a production team."
   },
   {
     "id": "poste-02",
     "ville": "Douala",
-    "dateLimite": "2026-01-31",
+    "dateLimite": "2027-01-31",
     "actif": true,
-    "placeholder": true,
-    "intitule": "Job title to be provided (example 2)",
-    "profil": "Required profile to be provided"
+    "placeholder": false,
+    "intitule": "Field sales representative",
+    "profil": "A dynamic person with strong interpersonal skills and an interest in sales and customer relations."
   },
   {
     "id": "poste-03",
     "ville": "Bonabéri",
-    "dateLimite": "2027-03-31",
-    "actif": true,
-    "placeholder": true,
-    "intitule": "Job title to be provided (example 3)",
-    "profil": "Required profile to be provided"
+    "dateLimite": "2026-03-31",
+    "actif": false,
+    "placeholder": false,
+    "intitule": "Maintenance technician",
+    "profil": "A methodical person with maintenance training and an interest in production equipment."
   }
 ]
