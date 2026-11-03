@@ -76,6 +76,7 @@ const telHref = computed(() =>
         </section>
       </div>
     </div>
-    <p class="wrap pb-8 text-sm opacity-90">&copy; {{ year }} {{ site?.nom }}. {{ t('footer.rights') }}</p>
+    <p class="wrap pb-1 text-sm opacity-90">&copy; {{ year }} {{ site?.nom }}. {{ t('footer.rights') }}</p>
+    <p class="wrap pb-8 text-sm opacity-90"><a href="https://nenxel.com">by Nenxel</a></p>
   </footer>
 </template>
